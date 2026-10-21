@@ -1,0 +1,2037 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Программы двойных дипломов — Satbayev University</title>
+<meta name="description" content="Программы двойных дипломов Satbayev University: 10 университетов-партнёров, этапы поступления, условия участия и контакты международного офиса.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Концепция: «Посадочный талон в международное образование».
+   Инженерная сетка-чертёж (технический университет) + маршруты
+   Алматы → партнёры. Фирменная тройка: синий / красный / белый.
+   ============================================================ */
+:root{
+  --navy:#0a1d4a;
+  --navy-2:#102a66;
+  --blue:#25518e;
+  --blue-soft:#e0e7f1;
+  --deep:#2e5d9c;      /* фон тёмных секций (светлее navy) */
+  --deep-2:#4677b8;
+  --red:#d42630;
+  --red-deep:#a81b24;
+  --red-on-blue:#ff4436;  /* красный акцент на синем фоне: ярче фирменного, чтобы читался */
+  --paper:#f4f2ec;
+  --paper-2:#ebe8df;
+  --white:#ffffff;
+  --ink:#0d1530;
+  --muted:#5b6380;
+  --line:rgba(13,21,48,.12);
+  --line-light:rgba(255,255,255,.14);
+
+  --f-display:"Unbounded", "Trebuchet MS", sans-serif;
+  --f-body:"Onest", "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --radius:18px;
+  --wrap:1240px;
+  --gutter:clamp(16px,4vw,40px);
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--f-body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+
+/* ---------- typography ---------- */
+.eyebrow{font-family:var(--f-mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(30px,4.4vw,56px);margin-top:18px}
+h3{font-size:20px;line-height:1.25}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:60ch}
+.section{padding:clamp(80px,11vw,140px) 0;position:relative}
+.section-head{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:56px}
+.section-head .lead{justify-self:end}
+.todo{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red-deep);background:rgba(212,38,48,.08);border:1px dashed rgba(212,38,48,.45);padding:3px 8px;border-radius:6px;white-space:nowrap}
+.partners .todo,.cta .todo{background:rgba(255,255,255,.92);border-color:transparent}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .3s var(--ease),background .3s,color .3s,box-shadow .3s;min-height:52px}
+.btn svg{width:18px;height:18px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px -10px rgba(212,38,48,.7)}
+.btn-red:hover{background:var(--red-deep);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-ink{background:var(--navy);color:#fff}
+.btn-ink:hover{background:var(--blue)}
+
+/* ---------- header ---------- */
+.header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s,box-shadow .35s}
+.header.scrolled{background:rgba(46,93,156,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-light)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-mark{display:grid;place-items:center;flex:none}
+.brand-mark img{height:44px;width:auto;filter:brightness(0) invert(1)} /* белый вариант логотипа */
+.brand-text{font-family:var(--f-display);font-size:14px;line-height:1.15;font-weight:500}
+.brand-text small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;opacity:.65;font-weight:400;text-transform:uppercase}
+.nav{display:flex;gap:4px}
+.nav a{color:rgba(255,255,255,.78);font-size:14.5px;padding:9px 14px;border-radius:999px;transition:background .25s,color .25s}
+.nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+.nav-cta{background:var(--red)!important;color:#fff!important;margin-left:8px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line-light);color:#fff;place-items:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:2px;background:currentColor;position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100svh;background:
+   radial-gradient(1200px 600px at 78% 30%, var(--deep-2), transparent 60%),
+   radial-gradient(700px 500px at 10% 100%, rgba(212,38,48,.18), transparent 60%),
+   var(--deep);
+  color:#fff;position:relative;overflow:hidden;display:flex;align-items:center;padding:clamp(88px,12vh,120px) 0 clamp(24px,5vh,56px)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+/* заголовок на всю ширину, ниже — текст слева и карта справа;
+   размеры привязаны к высоте экрана, чтобы первый блок помещался целиком */
+.hero-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-areas:"head head" "text map";column-gap:40px;row-gap:clamp(4px,1.5vh,20px);align-items:center}
+.hero-head{grid-area:head}
+.hero-text{grid-area:text}
+.hero-visual{grid-area:map}
+.hero h1{font-size:clamp(32px,min(4.6vw,7vh),72px);margin:0;font-weight:500}
+.hero h1 span{display:block}
+.hero h1 .accent{color:rgba(255,255,255,.55)}
+.hero h1 .accent em{font-style:normal;color:var(--red-on-blue);text-shadow:0 2px 18px rgba(10,29,74,.35)}
+.hero p{font-size:clamp(16px,min(1.4vw,2.1vh),19px);color:rgba(255,255,255,.8);max-width:46ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(18px,3.5vh,36px)}
+.hero-stats{display:flex;gap:44px;margin-top:clamp(20px,4vh,48px);padding-top:clamp(14px,2.2vh,24px);border-top:1px solid var(--line-light);flex-wrap:wrap}
+.hero-stats b{font-family:var(--f-display);font-size:clamp(26px,4vh,38px);font-weight:500;display:block;line-height:1}
+.hero-stats span{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.6}
+
+.hero-visual{position:relative;margin-right:calc(-1 * var(--gutter) - 2vw)}
+.map-wrap{position:relative}
+.routes{width:100%;height:auto;max-height:46vh;overflow:visible}
+.routes .graticule path{stroke:rgba(255,255,255,.07);fill:none;stroke-width:.6}
+.routes .land{fill:rgba(255,255,255,.12);stroke:rgba(46,93,156,.9);stroke-width:.5;opacity:0;animation:fade .8s forwards;transition:fill .3s}
+.routes .land.partner{fill:rgba(190,215,250,.62);stroke:#fff;stroke-width:.6;cursor:pointer;outline:none}
+.routes .land.partner:hover,.routes .land.partner:focus-visible,.routes .land.partner.on{fill:var(--red);stroke:#fff}
+.routes .land.home-land{fill:rgba(255,255,255,.28);stroke:#fff;stroke-width:.6}
+.routes .arc{fill:none;stroke:rgba(255,255,255,.5);stroke-width:1.1;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.4s var(--ease) forwards;pointer-events:none;transition:stroke .3s,stroke-width .3s}
+.routes .arc.hot{stroke:var(--red);stroke-width:1.8}
+.routes .city{opacity:0;animation:fade .6s forwards;pointer-events:none}
+.routes .city circle{fill:#fff}
+.routes .city text{font-family:var(--f-mono);font-size:9.5px;fill:rgba(255,255,255,.8);letter-spacing:.08em;paint-order:stroke;stroke:var(--deep);stroke-width:3px}
+.routes .home{pointer-events:none}
+.routes .home circle.ring{fill:none;stroke:var(--red);stroke-width:1.5;transform-origin:center;transform-box:fill-box;animation:ring 2.6s infinite}
+.routes .home text{font-family:var(--f-display);font-size:12px;fill:#fff;paint-order:stroke;stroke:var(--deep);stroke-width:3px}
+.map-tip{position:absolute;z-index:5;min-width:230px;max-width:290px;background:#fff;color:var(--ink);border-radius:16px;padding:16px 18px 14px;box-shadow:0 24px 50px -16px rgba(0,0,0,.6);transform:translate(-50%,calc(-100% - 14px));animation:tipIn .25s var(--ease);pointer-events:none}
+.map-tip.pinned{pointer-events:auto}
+.map-tip .tip-hint{margin-top:8px;font-size:12px;color:var(--muted)}
+.map-tip:not(.pinned) button{display:none}
+.map-tip.pinned .tip-hint{display:none}
+.map-tip::after{content:"";position:absolute;left:50%;bottom:-7px;width:14px;height:14px;background:#fff;transform:translateX(-50%) rotate(45deg);border-radius:2px}
+.map-tip small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.map-tip h4{font-family:var(--f-display);font-weight:500;font-size:17px;margin:4px 0 10px;line-height:1.2}
+.map-tip ul{list-style:none;display:grid;gap:6px;font-size:13.5px;line-height:1.35}
+.map-tip li{padding-left:14px;position:relative}
+.map-tip li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.map-tip button{margin-top:12px;font-weight:600;font-size:14px;color:var(--blue);display:inline-flex;gap:6px;align-items:center;min-height:36px}
+.map-tip button:hover{color:var(--red)}
+.map-tip.below{transform:translate(-50%,14px)}
+.map-tip.below::after{bottom:auto;top:-7px}
+@keyframes tipIn{from{opacity:0;transform:translate(-50%,calc(-100% - 4px))}}
+.map-legend{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0}
+.map-legend button{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid var(--line-light);color:rgba(255,255,255,.7);transition:.25s;min-height:32px}
+.map-legend button:hover,.map-legend button.on{background:var(--red);border-color:var(--red);color:#fff}
+.map-legend .home-key{border-style:dashed;pointer-events:none}
+.ticket-float{display:none;position:absolute;right:var(--gutter);bottom:90px;z-index:3;background:#fff;color:var(--ink);border-radius:16px;padding:16px 20px;gap:18px;align-items:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);font-family:var(--f-mono);font-size:12px;opacity:0;animation:rise .9s 1.6s var(--ease) forwards}
+.ticket-float b{font-family:var(--f-display);font-size:22px;font-weight:500;letter-spacing:-.02em}
+.ticket-float .plane{color:var(--red)}
+.scroll-hint{display:none;position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.5);text-transform:uppercase}
+
+/* staggered hero reveal */
+.stagger>*{opacity:0;transform:translateY(26px);animation:rise .9s var(--ease) forwards}
+.stagger>*:nth-child(1){animation-delay:.1s}
+.stagger>*:nth-child(2){animation-delay:.22s}
+.stagger>*:nth-child(3){animation-delay:.38s}
+.stagger>*:nth-child(4){animation-delay:.52s}
+.stagger>*:nth-child(5){animation-delay:.66s}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(212,38,48,0)}}
+@keyframes ring{0%{transform:scale(1);opacity:1}100%{transform:scale(3.4);opacity:0}}
+
+/* ---------- BLOCK 2: «Образование без границ» — тип → уровень → маршруты ---------- */
+.about{background:var(--paper)}
+.ex{background:#fff;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 40px 80px -60px rgba(10,29,74,.5)}
+/* вкладки типов — как «корешки» папки */
+.ex-types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--paper-2);border-bottom:1px solid var(--line)}
+.ex-type{display:flex;align-items:center;gap:14px;padding:20px 24px;text-align:left;position:relative;transition:background .3s,color .3s;border-right:1px solid var(--line)}
+.ex-type:last-child{border-right:0}
+.ex-type:hover{background:rgba(255,255,255,.6)}
+.ex-type[aria-selected="true"]{background:#fff}
+.ex-type[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--red)}
+.ex-type-ico{display:flex;flex:none}
+.ex-type-ico svg{width:30px;height:30px;color:var(--blue);background:#fff;border-radius:8px;padding:3px;border:1.5px solid var(--line)}
+.ex-type-ico svg+svg{margin-left:-14px;transform:rotate(8deg);color:var(--red)}
+.ex-type.sop .ex-type-ico svg+svg{opacity:.45;border-style:dashed}
+.ex-type-txt b{display:block;font-family:var(--f-display);font-weight:500;font-size:clamp(14px,1.3vw,17px);line-height:1.2}
+.ex-type-txt small{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.ex-body{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr)}
+/* определение + «формула» */
+.ex-def{padding:clamp(22px,3vw,36px);background:var(--navy);color:#fff;display:flex;flex-direction:column}
+.ex-def>*{animation:rise .5s var(--ease) both}
+.ex-def>*:nth-child(2){animation-delay:.06s}.ex-def>*:nth-child(3){animation-delay:.12s}
+.ex-q{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#ffa3a8}
+.ex-text{margin-top:12px;font-size:16px;line-height:1.6;color:rgba(255,255,255,.85)}
+.ex-eq{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:24px;flex-wrap:wrap}
+.ex-eq .node{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;font-family:var(--f-display);font-size:14px}
+.ex-eq .node.su{background:#fff;color:var(--navy)}
+.ex-eq .node.pt{background:var(--red);color:#fff}
+.ex-eq .node img{height:20px;width:auto}
+.ex-eq .op{font-family:var(--f-display);font-size:22px;color:rgba(255,255,255,.6)}
+.ex-res{display:grid;gap:8px;margin-top:12px}
+.dip{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:14.5px;animation:rise .5s var(--ease) both}
+.dip-ico svg{width:26px;height:26px;display:block}
+.dip.su .dip-ico{color:#9fc3ff}.dip.pt .dip-ico{color:#ffa3a8}
+.dip.opt{border-style:dashed;color:rgba(255,255,255,.75)}.dip.opt .dip-ico{color:rgba(255,255,255,.5)}
+.ex-res-note{margin-top:10px;font-size:13px;color:rgba(255,255,255,.55)}
+/* маршруты */
+.ex-routes{padding:clamp(22px,3vw,36px);min-width:0}
+.ex-routes-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.ex-routes-head small{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.ex-routes-head b{display:block;margin-top:6px;font-family:var(--f-display);font-weight:500;font-size:clamp(18px,1.8vw,24px)}
+.ex-levels{display:flex;gap:4px;padding:4px;background:var(--paper);border:1px solid var(--line);border-radius:999px}
+.ex-levels button{padding:9px 16px;border-radius:999px;font-size:14px;font-weight:500;color:var(--muted);min-height:40px;transition:background .25s,color .25s}
+.ex-levels button sup{font-family:var(--f-mono);font-size:10px;margin-left:3px;opacity:.7}
+.ex-levels button:hover{color:var(--ink)}
+.ex-levels button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.ex-legend{display:flex;gap:16px;flex-wrap:wrap;margin:18px 0 6px;font-size:12.5px;color:var(--muted)}
+.ex-legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+.ex-legend i.su{background:var(--navy)}
+.ex-legend i.pt{background:var(--red)}
+.ex-legend i.pm{background:repeating-linear-gradient(45deg,#f2a7ab 0 3px,#f8cfd1 3px 6px)}
+.ex-list{display:grid}
+.rr{display:grid;grid-template-columns:96px minmax(0,1fr) 200px;gap:16px;align-items:center;padding:16px 0;border-bottom:1px dashed var(--line);animation:rise .45s var(--ease) both}
+.rr:last-child{border-bottom:0}
+.rr-fmt b{display:block;font-family:var(--f-display);font-weight:500;font-size:22px;letter-spacing:-.02em;line-height:1.1}
+.rr-fmt .tag{display:inline-block;margin-top:6px;font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;background:#e3f4ea;color:#177245;line-height:1.2}
+.rr-main{display:flex;align-items:center;gap:12px;min-width:0}
+.rr-bar{flex:1;display:flex;gap:3px;min-width:0}
+.seg{flex:1 1 0;min-width:52px;height:46px;border-radius:10px;padding:6px 10px;display:flex;flex-direction:column;justify-content:center;color:#fff;overflow:hidden;transform-origin:left;animation:grow .6s var(--ease) both}
+.seg b{font-size:13.5px;font-weight:600;white-space:nowrap;line-height:1.15}
+.seg small{font-size:11px;opacity:.75;white-space:nowrap;line-height:1.15}
+.seg.su{background:var(--navy)}
+.seg.pt{background:var(--red);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.12) 0 2px,transparent 2px 10px)}
+.seg.pm{background:repeating-linear-gradient(45deg,#f2a7ab 0 4px,#f8cfd1 4px 8px);color:var(--red-deep)}
+@keyframes grow{from{transform:scaleX(0);opacity:0}}
+.rr-total{flex:none;font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.rr-text{font-size:14.5px;color:var(--muted);padding:12px 14px;border-radius:10px;background:var(--paper);border:1px dashed var(--line)}
+.rr-unis{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.rr-logo{height:44px;padding:6px 10px;border-radius:10px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.rr-logo img{display:block;max-height:30px;max-width:92px;width:auto;height:auto;object-fit:contain}
+.rr-logo:hover{transform:translateY(-3px);border-color:var(--blue);box-shadow:0 12px 20px -12px rgba(10,29,74,.45)}
+.ex-foot{margin-top:14px;font-size:13px;color:var(--muted)}
+
+.rr-fmt b.long{font-size:14px;letter-spacing:0}
+
+/* ---------- BLOCK 3: benefits — bento-сетка ---------- */
+.benefits{background:var(--paper-2)}
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-areas:"world world world world progs progs" "paths paths people people progs progs";gap:18px}
+.bn{position:relative;overflow:hidden;isolation:isolate;border-radius:28px;padding:clamp(24px,2.6vw,34px);background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s}
+.bn:hover{transform:translateY(-4px);box-shadow:0 34px 60px -40px rgba(10,29,74,.55)}
+/* «прожектор» за курсором */
+.bn::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(37,81,142,.12),transparent 45%);opacity:0;transition:opacity .35s}
+.bn:hover::before{opacity:1}
+.bn-num{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--muted);display:block}
+.bn h3{font-size:clamp(19px,1.7vw,23px);margin-top:14px;line-height:1.2}
+.bn p{color:var(--muted);font-size:15.5px;margin-top:12px;max-width:44ch}
+.bn-world{grid-area:world}.bn-progs{grid-area:progs}.bn-paths{grid-area:paths}.bn-people{grid-area:people}
+
+/* 01 — мир */
+.bn-world{background:var(--navy);color:#fff;border-color:transparent;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px;align-items:center;min-height:300px}
+.bn-world::before{background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.10),transparent 45%)}
+.bn-world .bn-num{color:rgba(255,255,255,.55)}
+.bn-world p{color:rgba(255,255,255,.72)}
+.bn-world-vis{position:relative;align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:10px;margin-right:calc(-1 * clamp(24px,2.6vw,34px))}
+.bn-big{position:absolute;right:clamp(24px,2.6vw,34px);top:-8px;display:flex;align-items:baseline;gap:10px;pointer-events:none}
+.bn-big b{font-family:var(--f-display);font-weight:700;font-size:clamp(90px,10vw,150px);line-height:.9;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.35)}
+.bn-big span{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.marquee{position:relative;z-index:1;display:grid;gap:10px;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);margin-top:70px}
+.mq-row{display:flex;gap:10px;width:max-content;animation:mq 46s linear infinite}
+.mq-row.rev{animation-direction:reverse;animation-duration:54s}
+.bn-world:hover .mq-row{animation-play-state:paused}
+.mq-row span{flex:none;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-size:14px;white-space:nowrap}
+.mq-row span i{width:7px;height:7px;border-radius:50%;background:var(--c,#ff6b72);flex:none}
+.mq-row span small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.5);text-transform:uppercase}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* 02 — программы */
+.bn-progs{background:var(--blue);color:#fff;border-color:transparent;display:flex;flex-direction:column}
+.bn-progs::before{background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.12),transparent 45%)}
+.bn-progs .bn-num{color:rgba(255,255,255,.6)}
+.bn-progs p{color:rgba(255,255,255,.75)}
+.bn-stat{display:flex;align-items:baseline;gap:12px;margin-top:18px}
+.bn-stat b{font-family:var(--f-display);font-weight:500;font-size:clamp(64px,6.4vw,92px);line-height:.9;letter-spacing:-.04em}
+.bn-stat span{font-size:14px;line-height:1.25;color:rgba(255,255,255,.75);max-width:11ch}
+.ticker{position:relative;flex:none;height:250px;margin:22px calc(-1 * clamp(24px,2.6vw,34px)) 6px;overflow:hidden;mask-image:linear-gradient(transparent,#000 18%,#000 82%,transparent)}
+.ticker ul{list-style:none;display:grid;gap:8px;padding:0 clamp(24px,2.6vw,34px);animation:tick 60s linear infinite}
+.bn-progs:hover .ticker ul{animation-play-state:paused}
+.ticker li{display:flex;gap:10px;align-items:baseline;font-size:14px;line-height:1.3;padding:9px 12px;border-radius:12px;background:rgba(255,255,255,.08)}
+.ticker li code{flex:none;font-family:var(--f-mono);font-size:11px;color:#ffc4c7}
+@keyframes tick{to{transform:translateY(-50%)}}
+
+/* 03 — траектории */
+.bn-paths{display:flex;flex-direction:column}
+.paths{list-style:none;display:grid;gap:12px;margin-top:22px}
+.paths li{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:12px;align-items:center}
+.paths b{font-family:var(--f-display);font-weight:500;font-size:16px;white-space:nowrap}
+.paths .bar{display:flex;gap:3px;height:14px}
+.paths .bar i{display:block;border-radius:4px;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease)}
+.paths .bar i.pt{background:var(--red)}
+.bento.in .paths .bar i{transform:scaleX(1)}
+.paths small{font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.paths-legend{display:flex;gap:16px;margin-top:16px;font-size:12.5px;color:var(--muted)}
+.paths-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--navy);margin-right:6px;vertical-align:-1px}
+.paths-legend i.pt{background:var(--red)}
+
+/* 04 — сообщество */
+.bn-people{display:flex;flex-direction:column}
+.cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.cloud span{height:48px;padding:8px 12px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;opacity:0}
+.cloud img{display:block;max-height:30px;max-width:104px;width:auto;height:auto;object-fit:contain}
+.bento.in .cloud span{animation:pop-in .5s var(--ease) both}
+.cloud span:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 14px 24px -14px rgba(10,29,74,.5)}
+@keyframes pop-in{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+.langs{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:18px}
+.langs span{font-size:12.5px;padding:5px 11px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.langs small{width:100%;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+
+/* ---------- BLOCK 4: partners ---------- */
+.partners{background:var(--deep);color:#fff;overflow:hidden}
+.partners .wrap{position:relative}
+.partners .lead{color:rgba(255,255,255,.7)}
+.partners .eyebrow{color:#ff6b72}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px}
+.chip{padding:10px 18px;border-radius:999px;border:1px solid var(--line-light);font-size:14.5px;color:rgba(255,255,255,.8);transition:.25s;min-height:44px}
+.chip:hover{border-color:rgba(255,255,255,.5);color:#fff}
+.chip[aria-pressed="true"]{background:#fff;color:var(--navy);border-color:#fff}
+.chip sup{font-family:var(--f-mono);font-size:10px;margin-left:4px;opacity:.6}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:22px}
+
+.pass{background:#fff;color:var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;position:relative;transition:transform .45s var(--ease),box-shadow .45s;cursor:pointer}
+.pass:hover{transform:translateY(-6px);box-shadow:0 40px 70px -35px rgba(0,0,0,.75)}
+.pass.hide{display:none}
+.pass-photo{height:170px;position:relative;overflow:hidden;background:var(--c1)}
+.pass-photo::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(160deg,transparent 30%,rgba(0,0,0,.45)),
+  repeating-linear-gradient(var(--angle,45deg),rgba(255,255,255,.07) 0 2px,transparent 2px 16px),
+  radial-gradient(circle at 80% 20%,var(--c2),transparent 60%);transition:transform .8s var(--ease)}
+.pass:hover .pass-photo::before{transform:scale(1.08)}
+.pass-photo .ph{position:absolute;left:18px;bottom:14px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;color:rgba(255,255,255,.75);text-transform:uppercase;display:flex;gap:8px;align-items:center}
+.pass-photo .ph svg{width:14px;height:14px}
+.pass-photo .iata{position:absolute;right:18px;top:12px;font-family:var(--f-display);font-size:54px;font-weight:700;color:rgba(255,255,255,.18);letter-spacing:-.03em;line-height:1}
+.logo-badge{position:absolute;left:18px;top:18px;height:58px;min-width:58px;max-width:min(200px,60%);padding:9px 12px;border-radius:14px;background:#fff;display:grid;place-items:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.35)}
+.logo-badge img{display:block;max-height:40px;max-width:100%;width:auto;height:auto;object-fit:contain}
+.pass-body{padding:22px 22px 18px;flex:1;display:flex;flex-direction:column}
+.route{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.08em}
+.route b{font-family:var(--f-display);font-size:18px;color:var(--ink);font-weight:500;letter-spacing:0}
+.route .line{flex:1;height:1px;background:repeating-linear-gradient(90deg,var(--ink) 0 4px,transparent 4px 8px);opacity:.3;position:relative}
+.route .line svg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(90deg);width:16px;height:16px;color:var(--red);background:#fff;padding:0 2px;box-sizing:content-box}
+.pass h3{margin:16px 0 4px;font-size:19px}
+.pass .loc{font-size:14.5px;color:var(--muted)}
+.perf{position:relative;margin:18px -22px;border-top:2px dashed var(--line)}
+.perf::before,.perf::after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--deep)}
+.perf::before{left:-11px}.perf::after{right:-11px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.field small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.field span{font-size:14px;font-weight:500}
+.field .pending{color:var(--muted);font-weight:400;font-style:italic}
+.status{display:inline-flex;align-items:center;gap:6px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:#c2a03a}
+.pass-foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+.more{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--blue);font-size:15px}
+.more svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.pass:hover .more svg{transform:translateX(4px)}
+.barcode{height:26px;width:84px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 8px,var(--ink) 8px 11px,transparent 11px 13px);opacity:.75}
+.partners-note{margin-top:34px;font-size:14px;color:rgba(255,255,255,.55);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* ---------- каталог: поиск, типы программ ---------- */
+.catalog-tools{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin-bottom:36px}
+.catalog-tools .filters{margin:0;flex:1;min-width:0}
+.search{position:relative;flex:0 0 300px}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:rgba(255,255,255,.6);pointer-events:none}
+.search input{width:100%;height:46px;border-radius:999px;border:1px solid var(--line-light);background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:15px;padding:0 18px 0 44px;outline:none;transition:background .25s,border-color .25s}
+.search input::placeholder{color:rgba(255,255,255,.55)}
+.search input:focus{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.6)}
+.pempty{padding:40px 0;color:rgba(255,255,255,.75);font-size:16px}
+.tbadges{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tbadge{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;letter-spacing:.01em}
+.tbadge.ddp{background:var(--blue-soft);color:var(--blue)}
+.tbadge.sop{background:#f8ecd2;color:#8a5d0a}
+.tbadge.phd{background:#ece4f6;color:#5b3a8c}
+.tbadge.in{background:#e3f4ea;color:#177245}
+.pass h3{margin-top:10px}
+/* попап: программы */
+.lead-text{font-size:17px;color:var(--ink)}
+.track-block{margin-top:26px;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:20px}
+.track-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.track-head h4{margin:0!important;font-family:var(--f-display);font-weight:500;font-size:19px}
+.fmt{font-family:var(--f-display);font-size:14px;padding:4px 12px;border-radius:999px;background:var(--navy);color:#fff}
+.scheme{color:var(--muted);font-size:15px;margin:8px 0 14px}
+.split .yr{flex:1 1 0;min-width:68px}
+.split .yr span,.split .yr b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.split-legend .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.split-legend .sw.su{background:var(--navy)}
+.split-legend .sw.pt{background:var(--red)}
+.split-legend{gap:12px;flex-wrap:wrap}
+.progs{list-style:none;display:grid;gap:6px;margin-top:16px}
+.progs li{display:flex;gap:12px;align-items:baseline;padding:10px 14px;border-radius:12px;background:var(--paper);font-size:15px;line-height:1.4}
+.progs code{flex:none;font-family:var(--f-mono);font-size:12px;color:var(--blue);background:#fff;border:1px solid var(--line);padding:2px 7px;border-radius:6px}
+.progs.plain li{background:transparent;padding:6px 0 6px 18px;position:relative;border-radius:0}
+.progs.plain li::before{content:"";position:absolute;left:0;top:.85em;width:8px;height:2px;background:var(--red)}
+.req{margin-top:14px;padding:14px 16px;border-radius:12px;border-left:4px solid var(--red);background:#fdf3f3}
+.req small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-deep)}
+.req p{margin-top:4px;font-size:15px}
+.note-text{margin-top:12px;font-size:14.5px;color:var(--muted)}
+.h4-note{font-family:var(--f-body);font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.dl-list,.fin-list{list-style:none;display:grid;gap:8px}
+.dl-list li{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:15px}
+.dl-list svg{flex:none;width:20px;height:20px;color:var(--blue);margin-top:1px}
+.fin-list li{padding:12px 16px 12px 36px;position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:15px}
+.fin-list li::before{content:"";position:absolute;left:16px;top:20px;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.life{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:26px}
+.life-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.life-card small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.life-card p{margin-top:8px;font-size:14.5px;line-height:1.5}
+.dlg-foot-status .tbadge{margin-right:4px}
+/* вводный блок: определения */
+.defs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.def{border-radius:22px;border:1px solid var(--line);background:#fff;overflow:hidden;transition:box-shadow .3s}
+.def[open]{box-shadow:0 30px 50px -36px rgba(10,29,74,.5)}
+.def summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-family:var(--f-display);font-weight:500;font-size:clamp(16px,1.5vw,19px);line-height:1.25}
+.def summary::-webkit-details-marker{display:none}
+.def summary small{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:400;margin-bottom:6px}
+.def summary .pm{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink);position:relative;transition:background .3s,border-color .3s,transform .4s var(--ease)}
+.def summary .pm::before,.def summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.def summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .4s var(--ease)}
+.def[open] summary .pm{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(180deg)}
+.def[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.def.main{background:var(--navy);color:#fff;border-color:transparent}
+.def.main summary small{color:#ffa3a8}
+.def.main summary .pm{border-color:#fff}
+.def.main[open] summary .pm{background:var(--red);border-color:var(--red)}
+.def p{padding:0 24px 24px;font-size:16px;line-height:1.6;animation:rise .45s var(--ease) both}
+.def:not(.main) p{color:var(--muted)}
+.def.main p{color:rgba(255,255,255,.8)}
+/* переключатель языка */
+.lang{display:flex;gap:2px;margin-left:10px;padding:3px;border:1px solid var(--line-light);border-radius:999px}
+.lang button{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:rgba(255,255,255,.7);padding:6px 9px;border-radius:999px;min-height:30px}
+.lang button:hover:not(:disabled){color:#fff}
+.lang button:disabled{opacity:.45;cursor:not-allowed}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--deep)}
+
+/* ---------- modal ---------- */
+.dialog{margin:auto;border:0;padding:0;border-radius:28px;max-width:940px;width:calc(100% - 40px);height:min(860px,calc(100dvh - 40px));color:var(--ink);background:var(--paper);box-shadow:0 60px 120px -30px rgba(0,0,0,.7);overflow:hidden}
+.dialog[open]{display:flex;flex-direction:column;animation:pop .5s var(--ease)}
+.dialog::backdrop{background:rgba(6,14,38,.72);backdrop-filter:blur(8px)}
+@keyframes sheet{from{transform:translateY(100%)}}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.97)}}
+.dlg-scroll{flex:1;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.dlg-head{background:var(--c1,var(--navy));color:#fff;padding:34px 36px 26px;position:relative;overflow:hidden}
+.dlg-head::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 0%,var(--c2,#5a8fd8),transparent 55%),
+  repeating-linear-gradient(45deg,rgba(255,255,255,.06) 0 2px,transparent 2px 16px);opacity:.9}
+.dlg-head::after{content:attr(data-iata);position:absolute;right:28px;bottom:-14px;font-family:var(--f-display);font-weight:700;font-size:120px;line-height:1;color:rgba(255,255,255,.1);letter-spacing:-.04em;pointer-events:none}
+.dlg-head>*{position:relative;z-index:1}
+.dlg-id{display:flex;gap:20px;align-items:flex-start;padding-right:56px}
+.dlg-logo{flex:none;height:76px;min-width:76px;max-width:230px;padding:10px 14px;border-radius:18px;background:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
+.dlg-logo img{display:block;max-height:56px;max-width:100%;width:auto;height:auto;object-fit:contain}
+.dlg-head .route,.dlg-head .route b{color:#fff}
+.dlg-head .route .line{background:repeating-linear-gradient(90deg,#fff 0 4px,transparent 4px 8px);max-width:120px}
+.dlg-head .route .line svg{background:transparent;color:#fff}
+.dlg-head h3{font-size:clamp(21px,2.6vw,28px);margin-top:10px}
+.dlg-loc{opacity:.78;margin-top:6px;font-size:15px}
+.dlg-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.dlg-quick>span{font-size:13px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(4px);display:inline-flex;gap:6px;align-items:center}
+.dlg-quick>span b{font-weight:600}
+.dlg-quick>.badge{background:#fff}
+.dlg-close{position:absolute!important;right:20px;top:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:24px;line-height:1;z-index:3!important;transition:background .25s,transform .3s var(--ease)}
+.dlg-close:hover{background:rgba(255,255,255,.32);transform:rotate(90deg)}
+.dlg-tabs{position:sticky;top:0;z-index:4;display:flex;gap:4px;padding:10px 28px;background:rgba(244,242,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.dlg-tabs button{flex:none;padding:10px 16px;border-radius:999px;font-size:14.5px;font-weight:500;color:var(--muted);transition:background .25s,color .25s;min-height:42px}
+.dlg-tabs button:hover{color:var(--ink);background:rgba(13,21,48,.05)}
+.dlg-tabs button[aria-selected="true"]{background:var(--navy);color:#fff}
+.dlg-demo{margin:20px 36px 0;font-size:13px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.dlg-body{padding:22px 36px 36px}
+.pane{display:none}
+.pane.active{display:block;animation:rise .45s var(--ease) both}
+.pane h4{font-family:var(--f-display);font-weight:500;font-size:18px;margin:30px 0 14px;letter-spacing:-.01em}
+.pane h4:first-child{margin-top:4px}
+.pane .text{font-size:16.5px;max-width:64ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.fact{background:#fff;padding:16px 18px}
+.fact small,.score small,.row small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.fact b{font-weight:500;font-size:15px;line-height:1.35;display:block}
+.fact a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px}
+.tags.strong span{background:var(--blue-soft);border-color:transparent;color:var(--navy);font-weight:500}
+/* формат обучения: годы в SU / у партнёра */
+.split{display:flex;gap:6px;margin-top:4px}
+.split .yr{flex:1;height:64px;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;justify-content:space-between;font-size:12px;color:#fff;position:relative;overflow:hidden;opacity:0;animation:rise .5s var(--ease) forwards}
+.split .yr b{font-family:var(--f-display);font-weight:500;font-size:15px}
+.split .su{background:var(--navy)}
+.split .pt{background:var(--red);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.1) 0 2px,transparent 2px 10px)}
+.split-legend{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-top:8px;letter-spacing:.06em;text-transform:uppercase}
+.rows{display:grid;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:220px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row small{margin:0}
+.row div{font-size:15.5px}
+.pending{color:var(--muted);font-style:italic}
+/* требования */
+.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.score{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px 22px;position:relative;overflow:hidden}
+.score .big{font-family:var(--f-display);font-weight:500;font-size:34px;line-height:1;letter-spacing:-.02em;color:var(--navy)}
+.score .big.sm{font-size:19px;line-height:1.2}
+.score p{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.4}
+.score::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.score.lang::after{background:var(--red)}
+.score.who::after{background:var(--c1,var(--navy))}
+.checklist{list-style:none;display:grid;gap:8px}
+.checklist label{display:flex;gap:14px;align-items:center;padding:13px 16px;background:#fff;border:1px solid var(--line);border-radius:14px;cursor:pointer;font-size:15px;transition:border-color .25s,background .25s}
+.checklist label:hover{border-color:rgba(37,81,142,.4)}
+.checklist input{appearance:none;flex:none;width:22px;height:22px;border-radius:7px;border:1.5px solid rgba(13,21,48,.35);display:grid;place-items:center;transition:background .25s,border-color .25s;cursor:pointer;margin:0}
+.checklist input:checked{background:var(--blue);border-color:var(--blue)}
+.checklist input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+.checklist input:checked+span{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(13,21,48,.3)}
+.checklist .extra{margin-left:auto;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--red-deep);background:rgba(212,38,48,.08);padding:3px 8px;border-radius:6px;white-space:nowrap}
+.progress-docs{display:flex;align-items:center;gap:14px;margin:-4px 0 14px;font-size:13.5px;color:var(--muted)}
+.progress-docs .bar{flex:1;height:6px;border-radius:9px;background:var(--paper-2);overflow:hidden}
+.progress-docs .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--red));border-radius:inherit;transition:width .5s var(--ease)}
+/* поступление */
+.timeline{list-style:none;position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:10px;top:8px;bottom:22px;width:2px;background:repeating-linear-gradient(var(--navy) 0 6px,transparent 6px 11px);opacity:.25}
+.timeline li{position:relative;padding:4px 0 22px}
+.timeline li::before{content:"";position:absolute;left:-30px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--navy)}
+.timeline li:first-child::before{background:var(--red);border-color:var(--red);box-shadow:0 0 0 5px rgba(212,38,48,.15)}
+.timeline b{font-weight:500;display:block}
+.timeline span{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.callout{margin-top:8px;padding:18px 20px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;gap:14px;align-items:flex-start;font-size:15px}
+.callout svg{flex:none;width:22px;height:22px;color:var(--blue);margin-top:1px}
+.callout.warn{background:#fbe5e6;border-color:transparent}
+.callout.warn svg{color:var(--red)}
+.dlg-foot{flex:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 28px;background:#fff;border-top:1px solid var(--line);flex-wrap:wrap}
+.dlg-foot-status{font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.dlg-actions{display:flex;gap:10px;flex-wrap:wrap}
+.dlg-actions .btn{min-height:48px;padding:12px 22px}
+
+/* ---------- BLOCK 5: steps — комикс ---------- */
+.steps{background:var(--paper)}
+.comic{display:grid;grid-template-columns:minmax(0,1fr) 330px;grid-template-areas:"stage side" "steps steps";gap:22px 28px;outline:none}
+.comic-stage{grid-area:stage;position:relative;aspect-ratio:800/560;width:min(100%,calc((100svh - 76px - 130px) * 800 / 560));justify-self:center;border-radius:14px;overflow:hidden;background:#fff;box-shadow:10px 10px 0 var(--navy);user-select:none}
+.cpanel{position:absolute;inset:0;margin:0;visibility:hidden}
+.cpanel svg{display:block;width:100%;height:100%}
+.cpanel.is-active{visibility:visible;z-index:1}
+.cpanel.entering{z-index:2;animation:wipe-next .7s cubic-bezier(.7,0,.2,1) both}
+.cpanel.entering[data-dir="prev"]{animation-name:wipe-prev}
+.cpanel.leaving svg{animation:panel-out .7s var(--ease) both}
+@keyframes wipe-next{from{clip-path:polygon(115% 0,135% 0,115% 100%,95% 100%)}to{clip-path:polygon(-35% 0,135% 0,115% 100%,-55% 100%)}}
+@keyframes wipe-prev{from{clip-path:polygon(-35% 0,-15% 0,-35% 100%,-55% 100%)}to{clip-path:polygon(-35% 0,135% 0,115% 100%,-55% 100%)}}
+@keyframes panel-out{to{transform:scale(1.04);filter:brightness(.85)}}
+.cpanel-num{position:absolute;right:14px;bottom:12px;font-family:var(--f-display);font-weight:700;font-size:clamp(16px,2vw,26px);color:#fff;background:var(--navy);padding:2px 12px;border-radius:8px;border:3px solid #1b1d33}
+/* персонаж: дыхание и моргание */
+.cpanel.is-active .chibi-bob{animation:bob 2.8s ease-in-out infinite}
+.chibi .eyes-open{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+.chibi .su-print{filter:brightness(0) invert(1)}   /* логотип Satbayev на худи — белым принтом */
+@keyframes bob{50%{transform:translateY(-5px)}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+.cpanel .sfx{font-family:var(--f-display);font-weight:700;letter-spacing:.02em}
+.cpanel .lbl{font-family:var(--f-body)}
+.cpanel .lbl.mono{font-family:var(--f-mono)}
+.cpanel .paper{animation:float 3.2s ease-in-out infinite}
+.cpanel .paper:nth-of-type(2n){animation-duration:3.8s;animation-direction:reverse}
+@keyframes float{50%{transform:translateY(-6px)}}
+.plane-fly{animation:fly 6s linear infinite}
+@keyframes fly{0%{transform:translate(-420px,90px)}100%{transform:translate(420px,-90px)}}
+.board-blink{animation:blinkTxt 1.2s steps(2) infinite}
+@keyframes blinkTxt{50%{opacity:.2}}
+/* реплики */
+.bubble{position:absolute;margin:0;z-index:3;background:#fff;color:#1b1d33;border:3px solid #1b1d33;border-radius:22px;padding:10px 14px;font-size:clamp(12px,1.25vw,16px);line-height:1.35;font-weight:600;box-shadow:4px 4px 0 rgba(27,29,51,.18);opacity:0}
+.cpanel.is-active .bubble{animation:bubble-in .45s cubic-bezier(.3,1.5,.5,1) var(--d,.45s) both}
+.bubble.npc{background:#fff7d6}
+.bubble::after{content:"";position:absolute;width:18px;height:18px;background:inherit;border:3px solid #1b1d33;border-top:0;border-left:0;transform:rotate(45deg)}
+.bubble.tail-b::after{left:28%;bottom:-11px}
+.bubble.tail-bl::after{left:14%;bottom:-11px}
+.bubble.tail-tr::after{right:18%;top:-11px;transform:rotate(-135deg)}
+.bubble.tail-tl::after{left:18%;top:-11px;transform:rotate(-135deg)}
+.bubble.tail-r::after{right:-11px;top:40%;transform:rotate(-45deg)}
+@keyframes bubble-in{from{opacity:0;transform:scale(.6) rotate(-4deg)}to{opacity:1;transform:none}}
+/* боковая панель */
+.comic-side{grid-area:side;display:flex;flex-direction:column;align-self:stretch;padding:6px 0}
+.comic-count{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.comic-num{font-family:var(--f-display);font-weight:700;font-size:clamp(70px,7vw,110px);line-height:1;color:transparent;-webkit-text-stroke:2px var(--blue);margin-top:8px}
+.comic-side h3{font-size:clamp(22px,2.2vw,30px);margin-top:12px}
+.comic-side p{color:var(--muted);margin-top:12px;font-size:16.5px}
+.comic-side.swap .comic-num,.comic-side.swap h3,.comic-side.swap #comicText{animation:rise .5s var(--ease) both}
+.comic-side.swap h3{animation-delay:.06s}.comic-side.swap #comicText{animation-delay:.12s}
+.comic-progress{height:6px;border-radius:9px;background:var(--paper-2);margin-top:auto;overflow:hidden}
+.comic-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--red));border-radius:inherit;transition:width .6s var(--ease)}
+.comic-hint{display:flex;align-items:center;gap:10px;font-size:13px!important;margin-top:16px!important}
+.comic-hint svg{width:22px;height:22px;flex:none;color:var(--blue)}
+/* лента шагов */
+.comic-steps{grid-area:steps;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.comic-steps button{position:relative;overflow:hidden;text-align:left;padding:12px 14px;border-radius:14px;background:#fff;border:1.5px solid var(--line);font-size:14px;font-weight:500;color:var(--muted);line-height:1.25;transition:border-color .25s,background .25s,color .25s;min-height:56px}
+.comic-steps button i{display:block;font-style:normal;font-family:var(--f-mono);font-size:11px;margin-bottom:3px;color:var(--blue)}
+.comic-steps button:hover{border-color:var(--blue);color:var(--ink)}
+.comic-steps button.done{color:var(--ink)}
+.comic-steps button.done i::after{content:" ✓";color:#177245}
+.comic-steps button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.comic-steps button.on i{color:#ffa3a8}
+/* таймер автолистания: полоска внизу активного шага; по её окончании — следующий кадр */
+.comic-steps .bar{position:absolute;left:0;bottom:0;height:4px;width:0;background:var(--red)}
+.comic.playing .comic-steps button.on .bar{animation:fill var(--dur,6s) linear forwards}
+.comic.paused .comic-steps button.on .bar{animation-play-state:paused}
+
+.steps-note{margin-top:40px;padding:20px 24px;border-radius:14px;background:var(--white);border:1px solid var(--line);display:flex;gap:16px;align-items:center;font-size:15px;color:var(--muted)}
+.steps-note svg{flex:none;width:24px;height:24px;color:var(--blue)}
+
+/* ---------- BLOCK 7: FAQ ---------- */
+.faq{background:var(--paper-2)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,90px)}
+.faq-aside{position:sticky;top:110px;align-self:start}
+.faq-aside .lead{margin-top:20px}
+.faq-aside .btn{margin-top:30px}
+.qa{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 0;cursor:pointer;font-family:var(--f-display);font-size:clamp(16px,1.6vw,19px);font-weight:500;line-height:1.3}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .pm{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink);position:relative;transition:background .3s,border-color .3s,transform .4s var(--ease)}
+.qa summary .pm::before,.qa summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.qa summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .4s var(--ease)}
+.qa[open] summary .pm{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(180deg)}
+.qa[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.qa summary:hover{color:var(--blue)}
+.qa .answer{padding:0 60px 26px 0;color:var(--muted);animation:rise .45s var(--ease) both}
+
+/* ---------- BLOCK 8: CTA ---------- */
+.cta{background:var(--deep);color:#fff;overflow:hidden;padding-bottom:0}
+.cta-inner{position:relative;text-align:center;max-width:900px;margin:0 auto}
+.cta h2{font-size:clamp(34px,5.6vw,76px)}
+.cta h2 em{font-style:normal;color:var(--red-on-blue);text-shadow:0 2px 18px rgba(10,29,74,.35)}
+.cta p{color:rgba(255,255,255,.72);max-width:56ch;margin:26px auto 40px;font-size:18px}
+.contacts{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-light);border:1px solid var(--line-light);border-radius:20px;overflow:hidden;margin-top:80px}
+.contact{background:var(--deep);padding:26px 24px}
+.contact small{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);display:block;margin-bottom:10px}
+.contact b{font-weight:500;font-size:16px}
+.contact-sub{font-size:14px;color:rgba(255,255,255,.65)}
+.footer{position:relative;margin-top:80px;padding:28px 0;border-top:1px solid var(--line-light);display:flex;justify-content:space-between;gap:20px;font-size:13.5px;color:rgba(255,255,255,.5);flex-wrap:wrap}
+
+/* ---------- scroll reveal ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal-group.in>*{animation:rise .8s var(--ease) both}
+.reveal-group>*{opacity:0}
+.reveal-group.in>*:nth-child(2){animation-delay:.08s}
+.reveal-group.in>*:nth-child(3){animation-delay:.16s}
+.reveal-group.in>*:nth-child(4){animation-delay:.24s}
+.reveal-group.in>*:nth-child(5){animation-delay:.32s}
+.reveal-group.in>*:nth-child(6){animation-delay:.40s}
+.reveal-group.in>*:nth-child(n+7){animation-delay:.48s}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"world world" "progs paths" "people people"}
+  .bn-progs .ticker{height:220px}
+  .track{grid-template-columns:repeat(3,1fr);row-gap:48px}
+  .track::before,.track .progress{display:none}
+  .contacts{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:960px){
+  .nav{position:fixed;inset:76px 0 auto 0;flex-direction:column;background:var(--deep);padding:16px var(--gutter) 24px;gap:4px;transform:translateY(-120%);transition:transform .45s var(--ease);box-shadow:0 30px 40px -20px rgba(0,0,0,.5)}
+  .nav.open{transform:none}
+  .nav a{padding:14px 16px;font-size:16px}
+  .nav-cta{margin:8px 0 0}
+  .lang{margin:12px 0 0;align-self:flex-start}
+  .lang button{min-width:44px;min-height:40px}
+  .burger{display:grid}
+  .hero-grid,.faq-grid,.section-head{grid-template-columns:minmax(0,1fr)}
+  .comic{grid-template-columns:minmax(0,1fr);grid-template-areas:"stage" "side" "steps"}
+  .ex-body{grid-template-columns:minmax(0,1fr)}
+  .ex-eq{margin-top:20px}
+  .comic-num{display:none}
+  .comic-progress{margin-top:14px}
+  .comic{gap:14px}
+  .comic-stage{width:min(100%,calc((100svh - 76px - 300px) * 800 / 560))}
+  .comic-side h3{margin-top:6px}
+  .comic-side p{font-size:15px;margin-top:6px}
+  .section-head .lead{justify-self:start}
+  .hero-grid{grid-template-areas:"map" "head" "text"}
+  .hero-visual{margin:0 calc(-1 * var(--gutter)) 0}
+  .routes{max-height:none}
+  .hero-actions{margin-top:28px}
+  .map-legend{margin-left:var(--gutter)}
+  .ticket-float{display:none}
+  .faq-aside{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero{padding-top:100px}
+  .hero-stats{gap:28px}
+  .hero-stats b{font-size:30px}
+  .hero-actions .btn{flex:1 1 100%;justify-content:center}
+  .hero h1{font-size:8vw}
+  .map-tip{min-width:200px;max-width:250px}
+  .bento{grid-template-columns:minmax(0,1fr);grid-template-areas:"world" "progs" "paths" "people"}
+  .bn-world{grid-template-columns:minmax(0,1fr)}
+  .bn-world-vis{margin-left:calc(-1 * clamp(24px,2.6vw,34px))}
+  .bn-big{right:clamp(24px,2.6vw,34px)}
+  .pgrid{grid-template-columns:1fr}
+  .track{grid-template-columns:1fr;row-gap:0}
+  .step{display:grid;grid-template-columns:64px 1fr;gap:0 20px;padding:0 0 32px;position:relative}
+  .step::before{content:"";position:absolute;left:31px;top:64px;bottom:0;width:2px;background:repeating-linear-gradient(var(--navy) 0 6px,transparent 6px 12px);opacity:.25}
+  .step:last-child::before{display:none}
+  .step h3{margin-top:18px}
+  .step p{grid-column:2}
+  .dd-formats{width:100%}
+  .dd-formats button{flex:1;padding:7px 8px}
+  .dd-year{height:72px;padding:10px 8px}
+  .dd-year b{font-size:11.5px;letter-spacing:-.02em}
+  .dd-year .l{display:none}
+  .dd-year .s{display:inline;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase}
+  .dd-year.pt.first{padding-left:16px}
+  .dd-plane span{width:30px;height:30px}
+  .dd-plane svg{width:16px;height:16px}
+  .dd-steps{grid-template-columns:repeat(4,1fr)}
+  .dd-steps button[role="tab"]{font-size:0;padding:10px 6px 12px;text-align:center}
+  .dd-steps button[role="tab"] i{font-size:12px;margin:0}
+  .dd-play{display:none}
+  .dd-stage{grid-template-columns:minmax(0,1fr)}
+  .dd-text{min-height:0}
+  .dd-num{font-size:44px}
+  .dd-diplomas{height:240px}
+  .dd-dip{width:47%;padding:16px 10px 12px}
+  .dd-dip b{font-size:13px}
+  .dd-dip span{display:none}
+  .dd[data-stage="3"] .dd-dip.su{transform:translateX(-46%) rotate(-6deg)}
+  .dd[data-stage="3"] .dd-dip.pt{transform:translateX(46%) rotate(6deg)}
+  .dd-stamp{width:64px;height:64px;font-size:20px}
+  .dd-compare{grid-template-columns:minmax(0,1fr)}
+  .defs{grid-template-columns:minmax(0,1fr)}
+  .ex-type{flex-direction:column;align-items:flex-start;gap:8px;padding:14px 12px}
+  .ex-type-ico svg{width:24px;height:24px}
+  .ex-type-txt b{font-size:13px}
+  .ex-levels{width:100%}
+  .ex-levels button{flex:1;padding:8px 6px;font-size:13px}
+  .rr{grid-template-columns:minmax(0,1fr);gap:10px}
+  .rr-fmt{display:flex;align-items:center;gap:10px}
+  .rr-fmt .tag{margin-top:0}
+  .rr-unis{justify-content:flex-start;max-width:none}
+  .comic-stage{box-shadow:6px 6px 0 var(--navy);margin-right:6px}
+  .bubble{font-size:10.5px;padding:6px 9px;border-width:2px;border-radius:14px}
+  .bubble::after{width:12px;height:12px;border-width:2px}
+  .bubble.tail-b::after,.bubble.tail-bl::after{bottom:-8px}
+  .comic-steps{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+  .comic-steps button{padding:10px 4px;text-align:center;min-height:44px}
+  .comic-steps button span{display:none}
+  .comic-steps button i{margin:0;font-size:12px}
+  .search{flex:1 1 100%}
+  .track-block{padding:18px 16px}
+  .progs li{flex-direction:column;gap:4px}
+  .cmp-vs{justify-self:center}
+  .contacts{grid-template-columns:1fr}
+  .dialog{width:100%;max-width:none;height:94dvh;margin:auto 0 0;border-radius:24px 24px 0 0}
+  .dialog[open]{animation:sheet .5s var(--ease)}
+  .dlg-head{padding:26px 20px 22px}
+  .dlg-head::after{font-size:80px;right:14px}
+  .dlg-id{gap:14px;padding-right:56px}
+  .dlg-logo{height:58px;min-width:58px;max-width:150px;padding:8px 10px;border-radius:14px}
+  .dlg-logo img{max-height:42px}
+  .dlg-tabs{padding:8px 14px}
+  .dlg-demo{margin:16px 20px 0}
+  .dlg-body{padding:18px 20px 28px}
+  .facts,.scores{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:1fr;gap:4px}
+  .dlg-foot{padding:12px 16px}
+  .dlg-foot-status{display:none}
+  .dlg-actions{width:100%}
+  .dlg-actions .btn{flex:1;justify-content:center;padding:12px 14px;font-size:15px}
+  .qa .answer{padding-right:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+  .reveal,.reveal-group>*,.stagger>*{opacity:1;transform:none}
+  .mq-row,.ticker ul{animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ====================== HEADER ====================== -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Satbayev University — на главную">
+      <span class="brand-mark"><img src="logo-nav-blue.svg" alt="Логотип Satbayev University" width="20" height="34"></span>
+      <span class="brand-text">Satbayev University<small>Double Degree</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы страницы">
+      <a href="#about">О программе</a>
+      <a href="#partners">Партнёры</a>
+      <a href="#steps">Как поступить</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Контакты</a>
+      <div class="lang" role="group" aria-label="Язык сайта">
+        <button aria-pressed="false" lang="kk" disabled title="Казахская версия готовится">KZ</button><button aria-pressed="true" lang="ru">RU</button><button aria-pressed="false" lang="en" disabled title="English version is coming soon">EN</button>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ====================== 1. HERO ====================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-head stagger">
+        <h1>
+          <span>Два университета</span>
+          <span class="accent">Два <em>диплома</em></span>
+          <span>Больше возможностей</span>
+        </h1>
+      </div>
+      <div class="hero-text stagger">
+        <p>Откройте новые горизонты вместе с&nbsp;Satbayev University и&nbsp;ведущими зарубежными университетами-партнёрами. Исследуйте международные образовательные программы, выбирайте новые академические направления и&nbsp;создавайте собственную траекторию профессионального развития.</p>
+        <div class="hero-actions">
+          <a href="#partners" class="btn btn-red">Выбрать программу
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#steps" class="btn btn-ghost">Как поступить</a>
+        </div>
+        <div class="hero-stats">
+          <div><b data-count="unis">17</b><span>университетов-партнёров</span></div>
+          <div><b data-count="countries">9</b><span>стран</span></div>
+          <div><b>2</b><span>диплома</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Интерактивная карта: страны партнёров + маршруты из Алматы -->
+        <div class="map-wrap" id="mapWrap">
+          <svg class="routes" viewBox="0 0 800 430" id="routes" role="group" aria-label="Карта стран университетов-партнёров">
+            <g class="graticule"></g>
+            <g class="countries"></g>
+            <g class="arcs"></g>
+            <g class="cities"></g>
+          </svg>
+          <div class="map-tip" id="mapTip" role="dialog" aria-live="polite" hidden></div>
+        </div>
+        <div class="map-legend" id="mapLegend" aria-label="Страны-партнёры"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticket-float" aria-hidden="true">
+    <div><small>FROM</small><br><b>ALA</b></div>
+    <svg class="plane" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg>
+    <div><small>TO</small><br><b id="ticketTo">HKG</b></div>
+    <div style="border-left:1px dashed var(--line);padding-left:16px"><small>CLASS</small><br><b style="font-size:15px">DOUBLE</b></div>
+  </div>
+  <a href="#about" class="scroll-hint">Листайте ↓</a>
+</section>
+
+<!-- ====================== 2. ABOUT ====================== -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Международные программы</span><h2>Образование без&nbsp;границ</h2></div>
+      <p class="lead">Satbayev University развивает международное академическое сотрудничество, объединяя образовательные возможности Казахстана и&nbsp;зарубежных стран.</p>
+    </div>
+
+    <!-- Интерактив: тип программы → уровень → реальные маршруты обучения (данные — из каталога партнёров) -->
+    <div class="ex reveal" id="explorer">
+      <div class="ex-types" id="exTypes" role="tablist" aria-label="Тип программы"></div>
+      <div class="ex-body">
+        <div class="ex-def" id="exDef" role="tabpanel" aria-live="polite"></div>
+        <div class="ex-routes">
+          <div class="ex-routes-head">
+            <div><small>Маршруты обучения</small><b id="exRoutesTitle">Как распределяются годы учёбы</b></div>
+            <div class="ex-levels" id="exLevels" role="group" aria-label="Уровень образования"></div>
+          </div>
+          <div class="ex-legend" aria-hidden="true"><span><i class="su"></i>Satbayev University · Алматы</span><span><i class="pt"></i>Университет-партнёр</span><span><i class="pm"></i>Магистратура у партнёра</span></div>
+          <div class="ex-list" id="exList"></div>
+          <p class="ex-foot">Нажмите на логотип, чтобы открыть подробности программы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== 3. BENEFITS ====================== -->
+<section class="section benefits" id="benefits">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Преимущества</span><h2>Больше возможностей для вашего будущего</h2></div>
+    </div>
+    <div class="bento" id="bento">
+      <article class="bn bn-world">
+        <div>
+          <span class="bn-num">01</span>
+          <h3>Международный академический опыт</h3>
+          <p>Знакомьтесь с&nbsp;образовательными системами других стран, новыми подходами к&nbsp;обучению и&nbsp;международной университетской средой.</p>
+        </div>
+        <div class="bn-world-vis" aria-hidden="true">
+          <div class="bn-big"><b data-count="countries">9</b><span>стран</span></div>
+          <div class="marquee"><div class="mq-row" id="mqA"></div><div class="mq-row rev" id="mqB"></div></div>
+        </div>
+      </article>
+
+      <article class="bn bn-progs">
+        <span class="bn-num">02</span>
+        <div class="bn-stat"><b id="progCount">0</b><span>образовательных программ</span></div>
+        <div class="ticker" aria-hidden="true"><ul id="progTicker"></ul></div>
+        <h3>Расширение профессиональных горизонтов</h3>
+        <p>Развивайте знания и&nbsp;навыки, которые помогут вам уверенно строить профессиональный путь в&nbsp;быстро меняющемся мире.</p>
+      </article>
+
+      <article class="bn bn-paths">
+        <span class="bn-num">03</span>
+        <h3>Новые образовательные траектории</h3>
+        <p>Открывайте дополнительные возможности для обучения и&nbsp;академического развития в&nbsp;сотрудничестве с&nbsp;зарубежными университетами.</p>
+        <ul class="paths" id="paths" aria-label="Форматы обучения и число университетов"></ul>
+        <div class="paths-legend" aria-hidden="true"><span><i></i>Satbayev University</span><span><i class="pt"></i>Университет-партнёр</span></div>
+      </article>
+
+      <article class="bn bn-people">
+        <span class="bn-num">04</span>
+        <h3>Международное сообщество</h3>
+        <p>Общайтесь со&nbsp;студентами и&nbsp;преподавателями из&nbsp;разных стран, обменивайтесь опытом и&nbsp;расширяйте профессиональные связи.</p>
+        <div class="cloud" id="cloud" aria-label="Университеты-партнёры"></div>
+        <div class="langs" id="langs"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== 4. PARTNERS ====================== -->
+<section class="section partners" id="partners">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Университеты-партнёры Satbayev University</span><h2>Выберите свой путь</h2></div>
+      <p class="lead"><span data-count="unis">17</span> университетов в&nbsp;<span data-count="countries">9</span> странах. Выберите направление — и&nbsp;откройте карточку, чтобы узнать подробности программы.</p>
+    </div>
+    <div class="catalog-tools">
+      <div class="filters" id="filters" role="group" aria-label="Фильтр по стране"></div>
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" id="psearch" placeholder="Университет, город или программа" aria-label="Поиск по программам"></label>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+    <p class="pempty" id="pempty" hidden>Ничего не найдено. Попробуйте изменить запрос или выбрать другую страну.</p>
+    <p class="partners-note"><span class="todo">Проверить</span> Логотипы и&nbsp;фото кампусов — заглушки. Данные программ — из&nbsp;материалов международного офиса; рейтинги и&nbsp;сроки перед публикацией сверить с&nbsp;актуальными.</p>
+  </div>
+</section>
+
+<dialog class="dialog" id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg-scroll" id="dlgScroll">
+    <header class="dlg-head" id="dlgHead">
+      <button class="dlg-close" id="dlgClose" aria-label="Закрыть">×</button>
+      <div class="dlg-id">
+        <span class="dlg-logo" id="dlgLogo"></span>
+        <div>
+          <div class="route" id="dlgRoute"></div>
+          <h3 id="dlgTitle"></h3>
+          <p class="dlg-loc" id="dlgLoc"></p>
+        </div>
+      </div>
+      <div class="dlg-quick" id="dlgQuick"></div>
+    </header>
+    <nav class="dlg-tabs" id="dlgTabs" role="tablist" aria-label="Разделы программы"></nav>
+    <div class="dlg-body" id="dlgBody"></div>
+  </div>
+  <footer class="dlg-foot">
+    <span class="dlg-foot-status" id="dlgFootStatus"></span>
+    <div class="dlg-actions">
+      <a href="#contact" class="btn btn-red" data-close>Связаться с международным офисом</a>
+    </div>
+  </footer>
+</dialog>
+
+<!-- ====================== 5. STEPS ====================== -->
+<section class="section steps" id="steps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Как поступить</span><h2>Ваш путь к&nbsp;двойному диплому</h2></div>
+      <p class="lead">Шесть шагов от&nbsp;выбора программы до&nbsp;начала обучения за&nbsp;рубежом.</p>
+    </div>
+    <!-- Комикс: кадры рисуются скриптом (SVG) и листаются прокруткой страницы -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <pattern id="cmDots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="1.7" fill="#1b1d33" opacity=".1"/></pattern>
+        <linearGradient id="cmSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb2f2"/><stop offset="1" stop-color="#cfe6ff"/></linearGradient>
+      </defs>
+    </svg>
+    <div class="comic reveal" id="comic" aria-roledescription="комикс" aria-label="Комикс: путь студента к двойному диплому. Кадры листаются автоматически, шаг можно выбрать кнопкой.">
+      <div class="comic-stage" id="comicStage"></div>
+      <aside class="comic-side" aria-live="polite">
+        <span class="comic-count" id="comicCount">Шаг 1 из 6</span>
+        <span class="comic-num" id="comicNum">01</span>
+        <h3 id="comicTitle"></h3>
+        <p id="comicText"></p>
+        <div class="comic-progress"><i id="comicBar"></i></div>
+        <p class="comic-hint"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l11 7-11 7z"/></svg>Кадры листаются сами — нажмите на шаг, чтобы перейти к нему</p>
+      </aside>
+      <nav class="comic-steps" id="comicSteps" aria-label="Шаги"></nav>
+    </div>
+    <div class="steps-note reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+      Порядок отбора и&nbsp;подачи документов может различаться в&nbsp;зависимости от&nbsp;университета-партнёра. Детали — в&nbsp;карточке конкретной программы.
+    </div>
+  </div>
+</section>
+
+<!-- ====================== 7. FAQ ====================== -->
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-aside reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Остались вопросы?</h2>
+      <p class="lead">Не нашли ответ? Международный офис поможет разобраться в&nbsp;условиях конкретной программы.</p>
+      <a href="#contact" class="btn btn-ink">Задать вопрос
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="reveal-group" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ====================== 8. CTA + CONTACTS ====================== -->
+<section class="section cta" id="contact">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <span class="eyebrow" style="justify-content:center;color:var(--red-on-blue)">Контакты</span>
+      <h2>Ваш следующий шаг <em>начинается здесь</em></h2>
+      <p>Выберите программу, узнайте об&nbsp;условиях участия и&nbsp;сделайте первый шаг к&nbsp;международному образовательному опыту.</p>
+      <a href="tel:+77272929019" class="btn btn-red">Связаться с международным офисом
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="contacts reveal-group">
+      <div class="contact"><small>Подразделение</small><b>Офис международного сотрудничества</b><br><span class="contact-sub">Отдел международных образовательных программ</span></div>
+      <div class="contact"><small>E-mail</small><b>[официальный e-mail]</b><br><span class="todo">Уточнить</span></div>
+      <div class="contact"><small>Телефон</small><b><a href="tel:+77272929019">+7 (727) 292-90-19</a></b></div>
+      <div class="contact"><small>Адрес</small><b>г. Алматы, ул. Сатпаева, 22</b><br><span class="contact-sub">Нефтяной корпус, каб. 302</span></div>
+    </div>
+
+    <footer class="footer">
+      <span>© Satbayev University</span>
+      <span>Прототип страницы «Программы двойных дипломов» · данные требуют подтверждения</span>
+    </footer>
+  </div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+/* =========================================================
+   ДАННЫЕ. Источник — CONTENT.md (часть 2), собранный из
+   «FDouble Degree Programs.docx». Обновление программ не
+   требует правки вёрстки (п. 8 ТЗ).
+   type:     ddp — двойной диплом, sop — совместная программа, phd — докторантура
+   incoming: обучение начинается в вузе-партнёре, затем — в Satbayev University
+   tracks:   уровни обучения; seg — отрезки шкалы [кто, лет, подпись]
+   todo:     что нужно уточнить (выводится в карточке пометкой)
+   ========================================================= */
+const PARTNERS = [
+  { id:"cityu", short:"CityUHK", name:"City University of Hong Kong", country:"Китай", city:"Гонконг", place:"Гонконг (САР КНР)",
+    iata:"HKG", lon:114.2, lat:22.3, c1:"#7a1631", c2:"#e0a03a", angle:"30deg", type:"ddp", lang:"Английский",
+    summary:"Филиал City University of Hong Kong на базе Satbayev University. Первая часть обучения проходит в Алматы, вторая — в Гонконге. Выпускник получает два диплома. Обучение полностью на английском языке.",
+    tracks:[
+      {level:"Бакалавриат", format:"2+2", scheme:"2 года в Satbayev University + 2 года в CityUHK", seg:[["su",2],["pt",2]],
+       programs:["6B06102 «Computer Science»","6B07302 «Строительная инженерия»","6B07109 «Инженерная физика и материаловедение»"],
+       req:"ЕНТ от 110 баллов по профильным предметам, IELTS Academic от 6.5 или TOEFL iBT от 79."},
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в CityUHK", seg:[["su",1],["pt",1]],
+       programs:["7M06102 «Machine Learning & Data Science»","7M07303 «Строительство и производство строительных материалов и конструкций»","7M07153 «Материаловедение и инженерия»"],
+       req:"КТ от 75 баллов, IELTS от 6.5 или TOEFL iBT от 79."}],
+    deadlines:["Бакалавриат: ЕНТ 10 мая – 10 июля, заявления на грант 13–20 июля, итоги до 10 августа, документы в вуз до 25 августа.",
+               "Магистратура: регистрация на КТ 1 июня – 8 июля, тестирование 20 июля – 10 августа, зачисление 15–28 августа."],
+    deadlineNote:"Ориентир по календарю приёма.",
+    finance:["Для граждан РК обучение покрывается грантом МНВО. Код филиала для заявления на грант: KZHKG-029."],
+    about:"QS World — 52-е место (2027), QS Asia — 7-е (2026), THE World — 70-е (2027). По версии THE — самый международный университет мира три года подряд (2024–2026).",
+    housing:"В Алматы — общежития и арендованные хостелы, заявка после зачисления. В Гонконге — резиденции CityUHK в Kowloon Tong и Ma On Shan.",
+    campus:"Вы будете не единственным иностранцем на кампусе: в CityUHK учатся более 7 000 иностранных студентов из 80 с лишним стран и регионов. Для них работают бадди-программа International Friends Club, студенческие ассоциации, спортивные клубы и отделения студенческих организаций.",
+    after:"Выпускники могут оформить визу IANG и остаться в Гонконге на 24 месяца, даже без предложения о работе. Помогает Career and Leadership Centre: стажировки в Гонконге и за рубежом, консультации по карьере и поиску работы." },
+
+  { id:"psu", short:"Penn State", name:"The Pennsylvania State University", country:"США", city:"Юниверсити-Парк", place:"Пенсильвания, США",
+    iata:"SCE", lon:-77.9, lat:40.8, c1:"#0b2b5c", c2:"#5a8fd8", angle:"60deg", type:"sop", lang:null,
+    summary:"Совместная образовательная программа для бакалавров по схеме 3+1+1. Первые три года обучения проходят в Алматы, четвёртый год — в Penn State. Выпускник получает диплом бакалавра Satbayev University. После успешного четвёртого года он может получить магистерский диплом Penn State по юриспруденции.",
+    tracks:[
+      {level:"Бакалавриат", format:"3+1", scheme:"3 года в Satbayev University + 1 год в Penn State", seg:[["su",3],["pt",1],["pt",1,"Магистратура"]],
+       programs:["6B07202 «Геология и разведка месторождений полезных ископаемых»","6B07109 «Инженерная физика и материаловедение»","6B06301 «Информационная безопасность»","6B07204 «Petroleum engineering»"],
+       req:"Минимальный GPA — 2.67, уровень английского не ниже B2. Отбор проводится на 3 курсе."},
+      {level:"Магистратура", format:"+1", scheme:"+1 год в Penn State по юриспруденции",
+       programs:["Специализация соответствует профилю бакалавриата, например Law in Cybersecurity или Law in Geology"]}],
+    selection:"Представитель Penn State приезжает в Казахстан и проводит собеседования со студентами. Комиссия Penn State сама выбирает лучших.",
+    finance:["Обучение в Penn State финансируется грантом Penn State: он покрывает 100% или 50% стоимости, возможны и другие варианты."],
+    about:"QS World 2027 — 92-е место в мире (топ-6% из 1 504 вузов), 23-е место в США. 5-е место среди вузов Big Ten и лучший государственный университет Пенсильвании (QS 2027). В рейтинге QS по предметам 2026 года представлен в 49 из 55 направлений. CWUR 2026 — 61-е место в мире.",
+    housing:"В Алматы — 3 года (общежития и другие варианты). В Penn State — residence halls, suites и апартаменты; студенты 4-го курса и магистратуры живут в кампусе или рядом.",
+    campus:"Главный кампус — в University Park (State College), классическом студенческом городе Happy Valley. Penn State — крупнейший центр приёма иностранных студентов в Пенсильвании и один из 15 ведущих вузов США по их числу. Сотни клубов, спортивная команда Nittany Lions, спортзалы, бассейны и постоянные мероприятия.",
+    todo:["Язык обучения"] },
+
+  { id:"skku", short:"SKKU", name:"Sungkyunkwan University", country:"Республика Корея", city:"Сувон", place:"Сувон, Республика Корея",
+    iata:"ICN", lon:127.0, lat:37.3, c1:"#1d4d32", c2:"#a8c93a", angle:"120deg", type:"sop", lang:null,
+    summary:"Совместная образовательная программа для бакалавров по схеме 3+1+1,5. Первые три года обучения проходят в Алматы, четвёртый — в Sungkyunkwan University. После 4 курса студент получает диплом бакалавра Satbayev University, затем продолжает обучение в магистратуре SKKU 1,5 года и получает диплом магистра Sungkyunkwan University.",
+    tracks:[
+      {level:"Бакалавриат", format:"3+1", scheme:"3 года в Satbayev University + 1 год в SKKU", seg:[["su",3],["pt",1],["pt",1.5,"Магистратура"]],
+       programs:["6B06301 «Информационная безопасность»","6B07307 «Архитектура»","6B02102 «Дизайн»","6B07302 «Строительная инженерия»"],
+       req:"Хороший GPA — 2.67, хороший уровень английского (не ниже B2), успешное академическое интервью. Сертификат IELTS/TOEFL даёт преимущество."},
+      {level:"Магистратура", format:"+1,5", scheme:"1,5 года в SKKU после успешного отбора во время обучения на 4 курсе в Корее"}],
+    deadlines:["Отбор и интервью — на 3 курсе."],
+    finance:["Обучение бесплатное, все остальные расходы — за счёт обучающегося."],
+    about:"Основан в 1398 году как высшее государственное учебное заведение династии Чосон; более 600 лет истории. Тесное партнёрство с Samsung. QS World 2027 — 108-е место (годом ранее — 126-е). THE World 2027 — 68-е место: лучший результат в истории университета и самый большой рост среди корейских вузов. Среди выпускников — многие государственные деятели, актёры и спортсмены Кореи.",
+    housing:"В Алматы — 3 года (общежития и другие варианты). В Корее студенты учатся и живут на Natural Sciences Campus в Сувоне; до Сеула 30–40 минут на метро. Общежитие Bongryonghaksa — прямо на кампусе: комнаты на 2, 4 или 6 человек, столовая, прачечная и спортзал.",
+    campus:"Современный кампус с зелёными зонами и лабораториями. Рядом Сеул, который в последнем рейтинге QS Best Student Cities признан лучшим городом мира для студентов.",
+    after:"Выпускники корейских вузов могут оформить визу D-10 для поиска работы в Корее. Точные сроки и условия стоит подтвердить в международном офисе SKKU." },
+
+  { id:"exeter", short:"Exeter", name:"University of Exeter", country:"Великобритания", city:"Эксетер", place:"Эксетер, Великобритания",
+    iata:"EXT", lon:-3.5, lat:50.7, c1:"#0f3b2e", c2:"#4fb39a", angle:"45deg", type:"ddp", lang:"Английский",
+    summary:"Двудипломная программа с одним из ведущих университетов Великобритании. Первый год магистратуры проходит в Алматы, второй — в Эксетере. Выпускник получает два диплома. Обучение в Exeter полностью на английском языке.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в University of Exeter", seg:[["su",1],["pt",1]],
+       programs:["7M04101 «Проектный менеджмент»","7M06102 «Machine Learning & Data Science»","7M07226 «Обогащение полезных ископаемых»"],
+       req:"КТ от 75 баллов, IELTS (пороговый балл в Exeter отличается для каждой программы).",
+       note:"Есть также формат 4+1: выпускники бакалавриата Satbayev могут поступить на любую магистерскую программу Exeter, кроме MBA и программ dual degree apprenticeship."}],
+    deadlines:["Регистрация на КТ 1 июня – 8 июля, тестирование 20 июля – 10 августа, зачисление 15–28 августа.",
+               "Отбор на саму программу проводится в течение первого курса магистратуры."],
+    about:"QS World 2027 — 136-е место (лучший результат в истории вуза), 21-е в Великобритании. THE World 2026 — 170-е место. Входит в Russell Group — объединение ведущих исследовательских университетов Великобритании.",
+    housing:"В Алматы — общежития, заявка после зачисления. В Великобритании — университетские резиденции Exeter. Горное дело и обогащение преподаются в Camborne School of Mines на кампусе в Корнуолле.",
+    campus:"В Exeter учатся 29 700 студентов из 150 стран. Университет занимает 4-е место в спортивном рейтинге британских вузов BUCS 2024/25.",
+    after:"Выпускники могут остаться в Великобритании по визе Graduate Route и работать без спонсора. Для заявлений, поданных с 1 января 2027 года, срок визы сокращается с 2 лет до 18 месяцев." },
+
+  { id:"hof", short:"Hof", name:"Hof University of Applied Sciences", country:"Германия", city:"Хоф", place:"Хоф, Бавария, Германия",
+    iata:"HOQ", lon:11.9, lat:50.3, c1:"#183a6b", c2:"#e45a3a", angle:"150deg", type:"ddp", lang:null,
+    summary:"Программа двойного диплома 3+1 для студентов Satbayev University. Первая часть обучения проходит в Алматы, затем студент проводит полный учебный год в Hof University, после чего возвращается в Satbayev University и защищается. Выпускник получает два диплома: казахстанский и немецкий диплом государственного университета прикладных наук Баварии.",
+    tracks:[
+      {level:"Бакалавриат", format:"3+1", scheme:"2,5 года в Satbayev University + 1 год в Hof University (с весеннего семестра 3 курса), затем завершение обучения и защита в Satbayev", seg:[["su",2.5],["pt",1],["su",0.5,"Защита"]],
+       programs:["6B06102 «Computer Science»","6B07131 «Design and Technology in Mechanical Engineering»"],
+       req:"Хороший GPA — 2.67, хороший уровень английского (не ниже B2), успешное академическое интервью. Сертификат IELTS/TOEFL даёт преимущество."}],
+    selection:"Отбор проходит среди студентов 2 и 3 курса осенью. Нужно подать документы; затем проверяются GPA и языковой сертификат и проводится академическое интервью.",
+    finance:["Hof University не взимает плату за обучение. Статус студента Satbayev University сохраняется.",
+             "Студенты на платной основе продолжают оплачивать обучение в Satbayev University по своему договору, в том числе за период в Hof. Для студентов на государственном гранте обучение бесплатное.",
+             "Перелёт, национальную визу, обязательную медицинскую страховку и проживание студент оплачивает сам. Для визы нужен подтверждённый финансовый резерв: в 2026 году это 11 904 € на первый год, после приезда сумма выплачивается частями по ~992 € в месяц. Хоф заметно дешевле Мюнхена и Берлина по аренде и питанию."],
+    about:"Университет прикладных наук (Fachhochschule) с упором на практику: проекты для промышленности и бизнеса, преподаватели с опытом работы в отрасли. Более 40 программ бакалавриата и магистратуры в области бизнеса, информатики и инженерии. По версии портала StudyCheck Hof второй год подряд назван самым популярным вузом Германии (StudyCheck Award 2024): средняя оценка 4,41 из 5, вуз рекомендуют 97% студентов.",
+    housing:"В Алматы — 3 года (общежития и другие варианты). В Хофе жильё помогает найти Housing Office университета.",
+    campus:"Хоф — небольшой, спокойный и недорогой город. Современные лаборатории и тесные связи с промышленностью. Для иностранных студентов работает International Student Network: немецкие и иностранные студенты становятся бадди для новичков. Курсы немецкого языка бесплатные." },
+
+  { id:"xian", short:"XRVTI", name:"Xi'an Railway Vocational and Technical Institute", country:"Китай", city:"Сиань", place:"Сиань, провинция Шэньси, КНР",
+    iata:"XIY", lon:108.9, lat:34.3, c1:"#3d1f57", c2:"#d84a4a", angle:"75deg", type:"ddp", incoming:true, lang:null,
+    summary:"Программа двух дипломов в сфере транспортной инженерии. Обучение по схеме 2+2: первые два курса студенты учатся в Сиане, 3 и 4 курсы — в Satbayev University. Выпускник получает два диплома.",
+    tracks:[
+      {level:"Бакалавриат", format:"2+2", scheme:"2 года в Xi'an Railway Vocational and Technical Institute + 2 года в Satbayev University", seg:[["pt",2],["su",2]],
+       programs:["6B07124 «Технология производства, ремонта и эксплуатации локомотивов»","6B11310 «Цифровая логистика»"]}],
+    finance:["Обучение бесплатное. Студенты, которые учатся в Satbayev на платной основе, оплачивают обучение по своему договору."],
+    about:"Государственный колледж, основан в 1956 году, учредитель — правительство Сианя. Создан на базе учебных заведений бывшего Министерства железных дорог Китая. Более 680 преподавателей, из них свыше 170 профессоров и доцентов; ещё более 200 специалистов-практиков из Сианьского железнодорожного управления и других предприятий преподают по совместительству. 183 базы практики на предприятиях, включая China Railway Xi'an Group.",
+    extra:[["Сотрудничество с Satbayev University","Вузы совместно открыли научный центр в области транспортной инженерии и логистики. Соглашение предусматривает взаимное признание кредитов и обмен студентами и преподавателями. Обсуждается создание филиала института на базе Satbayev с инновационными лабораториями для подготовки кадров транспортной отрасли Казахстана и Центральной Азии."]],
+    after:"Выпускники получают подготовку, ориентированную на железнодорожную отрасль и на транспортные проекты между Китаем и Казахстаном." },
+
+  { id:"lorraine", short:"Lorraine", name:"Université de Lorraine", country:"Франция", city:"Нанси", place:"Нанси, Франция",
+    iata:"ETZ", lon:6.2, lat:48.7, c1:"#22306b", c2:"#c9a227", angle:"15deg", type:"ddp", lang:null,
+    summary:"Двудипломная программа магистратуры с одним из крупнейших университетов Франции. Первый год обучения проходит в Алматы, второй — в Нанси. Выпускник получает два диплома.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в Université de Lorraine", seg:[["su",1],["pt",1]],
+       programs:["7M07207 «Геология нефти и газа»","7M07202 «Нефтяная инженерия»"]},
+      {level:"Бакалавриат", format:null, programs:["6B07101 «Энергетика»"]}],
+    about:"Ключевой участник программы — Высшая национальная школа геологии (ENSG), одна из лучших школ Франции в области наук о Земле. ARWU 2026 — 301–400 место. В 2020 году университет занял 11-е место в мире в Шанхайском рейтинге по горному делу.",
+    housing:"В Алматы — общежития. Во Франции — резиденции CROUS и частное жильё.",
+    campus:"60 000 студентов. Регион с XIX века формировался горнодобывающей и металлургической промышленностью. Граничит с Бельгией, Люксембургом и Германией, поэтому многие программы многоязычные.",
+    after:"68% выпускников ENSG находят работу ещё до получения диплома. Выпускники магистратуры во Франции могут получить вид на жительство для поиска работы.",
+    todo:["Формат и условия бакалавриата «Энергетика»"] },
+
+  { id:"kimyo", short:"Kimyo", name:"Ташкентский международный университет Кимё", country:"Узбекистан", city:"Ташкент", place:"Ташкент, Узбекистан",
+    iata:"TAS", lon:69.25, lat:41.3, c1:"#0e4a63", c2:"#5fc0d6", angle:"105deg", type:"ddp", incoming:true, lang:"Русский",
+    summary:"Двудипломная программа бакалавриата в космической отрасли. 1 и 2 курсы — в Ташкенте, 3 и 4 — в Алматы. Выпускник получает дипломы обоих вузов.",
+    tracks:[
+      {level:"Бакалавриат", format:"2+2", scheme:"2 года в Kimyo International University + 2 года в Satbayev University", seg:[["pt",2],["su",2]],
+       programs:["6B07121 «Космическая техника и технологии»"]}],
+    about:"Первый частный вуз Узбекистана, создан в 2018 году как «Ёджу Технический институт» в Ташкенте. Обучение на узбекском, русском и английском языках.",
+    after:"Выпускники работают в эксплуатации ракетно-космических комплексов, испытаниях и баллистическом обеспечении космических аппаратов; практику проходят на предприятиях космической и аэрокосмической отрасли." },
+
+  { id:"bsu", short:"БГУ", name:"Бакинский государственный университет", country:"Азербайджан", city:"Баку", place:"Баку, Азербайджан",
+    iata:"GYD", lon:49.9, lat:40.4, c1:"#123f6e", c2:"#e04848", angle:"135deg", type:"ddp", lang:"Русский / английский",
+    summary:"Двудипломная программа магистратуры в области химической инженерии. Первый год обучения проходит в Алматы, второй — в Баку. Выпускник получает два диплома.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в Бакинском государственном университете", seg:[["su",1],["pt",1]],
+       programs:["7M07109 «Химическая инженерия углеводородных соединений»"]}],
+    about:"Первый вуз Азербайджана, основан в 1919 году. QS World 2027 — 565-е место (лучший результат в истории вуза и первый случай, когда вуз Азербайджана вошёл в топ-600). QS Europe 2026 — 278-е место. В предметных рейтингах QS 2026 представлен по химической инженерии, химии и нефтегазовой инженерии. Член Европейской ассоциации университетов (EUA).",
+    campus:"Баку — один из старейших нефтяных центров мира.",
+    after:"Работа на НПЗ и нефтехимических производствах Казахстана и Азербайджана." },
+
+  { id:"tstu", short:"ТашГТУ", name:"Ташкентский государственный технический университет им. Ислама Каримова", country:"Узбекистан", city:"Ташкент", place:"Ташкент, Узбекистан",
+    iata:"TAS", lon:69.3, lat:41.33, c1:"#2a2a62", c2:"#3fa0d0", angle:"165deg", type:"ddp", lang:"Русский",
+    summary:"Двудипломные программы магистратуры в машиностроении, энергетике и метрологии. Выпускник получает два диплома.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в ТашГТУ", seg:[["su",1],["pt",1]],
+       programs:["7M07111 «Цифровая инженерия машин и оборудования»","7M07112 «Цифровизация машиностроительного производства»","7M07144 «Инновационные технологии и оборудование в возобновляемой энергетике»","7M07502 «Метрология (по отраслям)»"]}],
+    deadlines:["Регистрация на КТ 1 июня – 8 июля, тестирование 20 июля – 10 августа, зачисление 15–28 августа."],
+    deadlineNote:"Ориентир.",
+    finance:["Обучение бесплатное, все остальные расходы покрываются магистрантами."],
+    about:"Один из старейших вузов Узбекистана и один из крупнейших технических вузов Центральной Азии в авиации, геологии, машиностроении, энергетике, электротехнике и автоматике. Сотрудничает с научными центрами Германии, Франции, США и Великобритании.",
+    campus:"Ташкент — крупнейший город Центральной Азии. Культура и язык близки, поэтому адаптация проходит легко.",
+    after:"Работа в машиностроении и энергетике Казахстана и Узбекистана.",
+    todo:["Формат: в описании «2+2», в магистратуре — «1 год + 1 год»"] },
+
+  { id:"mines", short:"Mines", name:"Colorado School of Mines", country:"США", city:"Голден", place:"Голден, Колорадо, США",
+    iata:"DEN", lon:-105.2, lat:39.75, c1:"#1f3a5f", c2:"#c9a227", angle:"50deg", type:"sop", lang:"Английский",
+    summary:"Совместные образовательные программы с мировым лидером в горном деле. Обучение в Mines полностью на английском языке.",
+    tracks:[
+      {level:"Бакалавриат", format:null, scheme:"Satbayev University + Colorado School of Mines",
+       programs:["6B07201 «Нефтегазовая и рудная геофизика»","6B07204 «Petroleum engineering»","6B07205 «Горная инженерия»","6B07209 «Geology and Geological Engineering»"],
+       req:"GPA от 2.67, IELTS/TOEFL (уровень английского B2), интервью."}],
+    about:"QS по предметам 2026 — 1-е место в мире по Mineral & Mining Engineering. Государственный исследовательский университет высшей категории R1, основан в 1874 году, специализируется на энергетике и окружающей среде.",
+    housing:"В Алматы — общежития. В Голдене — кампусные общежития Mines.",
+    campus:"Кампус в городе Голден (штат Колорадо), у подножия Скалистых гор, рядом с Денвером.",
+    after:"Выпускники с визой F-1 могут работать в США по программе OPT. Специальности Mines относятся к STEM, поэтому OPT можно продлить.",
+    todo:["Формат и распределение лет обучения"] },
+
+  { id:"grenoble", short:"Phelma", name:"Grenoble INP – Phelma, Université Grenoble Alpes", country:"Франция", city:"Гренобль", place:"Гренобль, Франция",
+    iata:"GNB", lon:5.72, lat:45.19, c1:"#123b5c", c2:"#4fb3d9", angle:"95deg", type:"ddp", lang:"Английский / французский",
+    summary:"Двудипломная программа бакалавриата по ядерной энергетике. Первые три года обучения проходят в Алматы, четвёртый — в Гренобле. Выпускник получает два диплома.",
+    tracks:[
+      {level:"Бакалавриат", format:"3+1", scheme:"3 года в Satbayev University + 1 год в Grenoble INP – Phelma", seg:[["su",3],["pt",1]],
+       programs:["6B07129 «Ядерная энергетика»"],
+       req:"GPA от 2.67, IELTS/TOEFL — B2, интервью.",
+       note:"Год в Гренобле проходит на программе Bachelor in Nuclear Engineering: она длится 1 год и ведётся на английском/французском языке."}],
+    about:"Школа входит в Université Grenoble Alpes (топ-150 Шанхайского рейтинга) и расположена в одном из крупнейших научно-промышленных кластеров Европы. Участвует в проекте Minatec — одном из крупнейших центров нанотехнологических исследований Европы.",
+    housing:"В Алматы — общежития. Собственных общежитий у Phelma нет; студенты живут в Résidence de la Houille Blanche, в резиденциях CROUS или снимают жильё.",
+    campus:"Гренобль — студенческий город во французских Альпах. Во Франции 56 ядерных реакторов дают 70% энергобаланса, поэтому студенты учатся в стране с одной из самых развитых атомных отраслей мира.",
+    after:"Квалификация востребована при строительстве АЭС в Казахстане." },
+
+  { id:"lyon", short:"Centrale", name:"École Centrale de Lyon — кампус ENISE", country:"Франция", city:"Сент-Этьен", place:"Сент-Этьен, Франция",
+    iata:"EBU", lon:4.39, lat:45.43, c1:"#3a1f4f", c2:"#d4a017", angle:"140deg", type:"ddp", lang:"Английский",
+    summary:"Двудипломная программа магистратуры в машиностроении с одной из ведущих инженерных школ Франции. Первый год обучения проходит в Алматы, второй — на кампусе Centrale Lyon в Сент-Этьене (внутренняя школа ENISE). Выпускник получает два диплома магистра — Satbayev University и École Centrale de Lyon, каждый с транскриптом. Второй год полностью на английском языке.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Satbayev University + 1 год в Centrale Lyon (кампус Сент-Этьен)", seg:[["su",1],["pt",1]],
+       programs:["7M07155 «Передовые технологии и устойчивое производство»"],
+       req:"Успешно завершённый 1 курс магистратуры в Satbayev University; английский не ниже B2 (для англоязычной программы SMAT); сильная академическая успеваемость и мотивация.",
+       note:"Второй год в Centrale Lyon (60 ECTS): долговечность материалов и процессы их обработки, моделирование износа и механической обработки, термомеханические процессы и целостность поверхности, восстановление и функционализация поверхностей, Индустрия 4.0, ответственная инженерия, французский язык. Второй семестр — исследовательский проект и магистерская диссертация (30 ECTS)."}],
+    selection:"Кандидатов номинирует Satbayev University, окончательное решение о зачислении принимает приёмная комиссия Centrale Lyon; возможно онлайн-интервью.",
+    docs:["Анкета","Копия паспорта","CV","Транскрипт Satbayev","Мотивационное письмо","Письмо Satbayev о номинации"],
+    finance:["Centrale Lyon не взимает плату за обучение. Студенты на платной основе продолжают оплачивать обучение в Satbayev University по своему договору, в том числе за год во Франции.",
+             "Перелёт, визу, проживание, учебные материалы, медицинскую страховку, языковые курсы до начала занятий (если нужны) и личные расходы студент оплачивает сам. Можно претендовать на стипендию Eiffel или стипендию Посольства Франции."],
+    about:"Одна из ведущих инженерных школ Франции (Grandes Écoles). ENISE — внутренняя инженерная школа Centrale Lyon в Сент-Этьене, сильная в машиностроении, материаловедении и производственных технологиях.",
+    housing:"В Алматы — общежития, заявка после зачисления. Во Франции Centrale Lyon помогает найти жильё; сроки подачи заявки на жильё сообщаются при поступлении.",
+    campus:"Студенты программы зачисляются как полноправные студенты Centrale Lyon и могут участвовать в адаптационных программах для иностранных студентов. Изучение французского языка входит в учебный план. Сент-Этьен — город с промышленными традициями, в часе езды от Лиона.",
+    after:"Французский диплом магистра в области передовых производственных технологий востребован в машиностроении, металлургии и на высокотехнологичных производствах. Выпускники французских магистратур могут получить вид на жительство для поиска работы во Франции.",
+    todo:["Условия для студентов на государственном гранте"] },
+
+  { id:"hasselt", short:"UHasselt", name:"Hasselt University", country:"Бельгия", city:"Хасселт", place:"Хасселт, Бельгия",
+    iata:"BRU", lon:5.34, lat:50.93, c1:"#0b4f4a", c2:"#e06b3a", angle:"20deg", type:"phd", lang:null,
+    summary:"Рамочное соглашение о сотрудничестве в докторантуре (PhD) с бельгийским исследовательским университетом. Условия для каждого докторанта закрепляются в отдельном индивидуальном соглашении между двумя вузами и самим докторантом.",
+    tracks:[
+      {level:"Докторантура (PhD)", format:"Joint PhD", scheme:"Формат 1. Совместная докторантура (joint PhD / double degree) — два диплома доктора",
+       programs:["Докторант принят в докторантуру обоих университетов по одной специальности","Два научных руководителя (promoter) — по одному от Satbayev и UHasselt","Исследовательские периоды в каждом вузе — не менее 6 месяцев, подряд или с чередованием","Одна диссертация и одна публичная защита","После защиты каждый университет выдаёт свой диплом доктора с отметкой о совместной программе"]},
+      {level:"Докторантура (PhD)", format:"Joint supervision", scheme:"Формат 2. Совместное руководство (joint supervision) — один диплом UHasselt",
+       programs:["Докторант зачисляется в докторантуру UHasselt","Основной научный руководитель — от UHasselt, второй (co-promoter) — от Satbayev","Исследовательские периоды в каждом вузе — не менее 6 месяцев","Защита проходит в UHasselt, диплом доктора выдаёт только UHasselt со ссылкой на соглашение"]}],
+    selection:"Поступление по правилам обоих университетов. Конкретные специальности согласуются под каждого кандидата. Сильные стороны UHasselt — науки о жизни, экологические технологии, биостатистика, визуальные вычисления, новые материалы, безопасность дорожного движения и мобильность.",
+    about:"THE World University Rankings 2026 — 301–350 место из 2 191 вуза. ARWU 2026 — 701–800 место. Первым из фламандских университетов (в 2011 году) получил знак качества Еврокомиссии «HR Excellence in Research». Основан в 1973 году как Limburg University Centre, нынешнее название — с 2005 года.",
+    campus:"В 2025–2026 учебном году в UHasselt обучаются 740 докторантов, международные — 46%. Вместе с Маастрихтским университетом (Нидерланды) UHasselt образует Transnational University of Limburg. Хасселт — на стыке границ Бельгии, Нидерландов и Германии.",
+    after:"Европейская степень PhD и опыт исследований в Бельгии открывают путь к постдокторским позициям и международным исследовательским проектам." },
+
+  { id:"sdust", short:"SDUST", name:"Шаньдунский университет науки и технологий", country:"Китай", city:"Циндао", place:"Циндао, провинция Шаньдун, КНР",
+    iata:"TAO", lon:120.2, lat:35.96, c1:"#5a1a1a", c2:"#e0a03a", angle:"110deg", type:"ddp", lang:"Китайский",
+    summary:"Двудипломная программа бакалавриата с обучением на китайском языке. Первые два года обучения проходят в Алматы, последние два — в Циндао. Выпускник получает диплом об окончании бакалавриата и диплом бакалавра SDUST, а также диплом Satbayev University.",
+    tracks:[
+      {level:"Бакалавриат", format:"2+2", scheme:"2 года в Satbayev University + 2 года в SDUST", seg:[["su",2],["pt",2]],
+       programs:["«Бизнес-инжиниринг» (Satbayev) / «Business Administration», обучение на китайском языке (SDUST)"],
+       req:"Для перехода в SDUST на 3 курс: все дисциплины первых двух лет сданы, китайский язык не ниже HSK 4, выполнены требования SDUST к зачислению. Для получения дипломов: все дисциплины в SDUST сданы, китайский язык на уровне HSK 5.",
+       note:"Набор — не менее 10 студентов в год. На втором курсе в Алматы студенты изучают китайский язык с преподавателем, которого направляет SDUST. Если студент не успевает завершить обучение в срок, обучение в SDUST можно продлить не более чем на два года (по тарифам SDUST)."}],
+    about:"Государственный университет, главный кампус которого с 2003 года находится в Циндао.",
+    housing:"В Алматы — общежития, заявка после зачисления. В Циндао — общежития SDUST (одно-, двух- или четырёхместные комнаты). При групповом прибытии (от 5 человек) SDUST бесплатно встречает студентов в аэропорту или на вокзале Циндао.",
+    campus:"Кампус в районе Хуандао — Циндао, крупном прибрежном городе на Жёлтом море. Обучение на китайском языке даёт полное погружение в язык и культуру.",
+    after:"Китайский диплом бакалавра и китайский на уровне HSK 5 востребованы в компаниях, работающих с Китаем: в торговле, логистике и на совместных предприятиях в Казахстане и Китае." },
+
+  { id:"kokand", short:"КокандГУ", name:"Кокандский государственный университет", country:"Узбекистан", city:"Коканд", place:"Коканд, Ферганская область, Узбекистан",
+    iata:"FEG", lon:70.94, lat:40.53, c1:"#1d4a3a", c2:"#7fc98a", angle:"70deg", type:"ddp", incoming:true, lang:"Русский",
+    summary:"Двудипломная программа магистратуры в области программной инженерии. Первый год обучения проходит в Коканде, второй — в Алматы. Выпускник получает два диплома: магистра Кокандского государственного университета и магистра Satbayev University. Обучение на русском языке, в смешанном формате: очно с применением дистанционных технологий.",
+    tracks:[
+      {level:"Магистратура", format:"1+1", scheme:"1 год в Кокандском государственном университете + 1 год в Satbayev University", seg:[["pt",1],["su",1]],
+       programs:["70610101 «Компьютерные системы и их программное обеспечение» (КокандГУ) / 7M06101 «Software engineering» (Satbayev University)"],
+       note:"Выпускник получает диплом магистра КокандГУ и диплом магистра Satbayev University со степенью «магистр технических наук». Объём программы — 120 кредитов ECTS, по 60 в каждом вузе. После успешного окончания 1 курса в Коканде студент продолжает обучение в Satbayev University; оценки 1 курса перезачитываются по согласованной шкале."}],
+    selection:"Заявление подаётся в приёмную комиссию КокандГУ. Конкурсный отбор проводят оба вуза, каждый по своим правилам; отбор проходит на русском языке, возможно дистанционно. Студент зачисляется приказами обоих вузов и становится магистрантом обоих университетов.",
+    deadlines:["Зачисление — не позднее 20 августа года поступления."],
+    finance:["Обучение платное. Студент заключает отдельные договоры с каждым вузом.",
+             "КокандГУ — оплата в сумах по договору с КокандГУ.",
+             "Satbayev University — студент оплачивает стоимость одного учебного года в тенге двумя равными частями: 50% на 1 курсе и 50% на 2 курсе.",
+             "Проживание, проезд, медицинская страховка и миграционный учёт оплачиваются студентом самостоятельно."],
+    about:"История университета начинается в 1931 году, когда был основан первый вуз Коканда — вечерний педагогический институт. Статус Кокандского государственного университета получен в 2025 году: в его состав вошли Кокандский государственный педагогический институт, Кокандский филиал ТашГТУ и Ферганский филиал Государственного института искусств и культуры.",
+    campus:"Коканд — исторический город в Ферганской долине. Близкие язык и культура облегчают адаптацию, а второй год в Алматы даёт опыт учёбы в крупнейшем техническом университете Казахстана.",
+    after:"Два магистерских диплома в сфере IT открывают возможности для работы разработчиком и инженером ПО в Узбекистане и Казахстане." },
+
+  { id:"qust", short:"QUST", name:"Qingdao University of Science and Technology", country:"Китай", city:"Циндао", place:"Циндао, провинция Шаньдун, КНР",
+    iata:"TAO", lon:120.42, lat:36.12, c1:"#1b3f73", c2:"#e05a5a", angle:"160deg", type:"ddp", incoming:true, lang:null,
+    summary:"Двудипломная программа для студентов QUST, при которой всё обучение проходит в КНР, без выезда за рубеж. Выпускник получает два диплома: Satbayev University и Qingdao University of Science and Technology.",
+    tracks:[
+      {level:"Бакалавриат", format:"4+0", scheme:"4 года, формат 4+0",
+       programs:["6B06110 «Computer Science & AI Engineering»","6B06301 «Информационная безопасность»","6B06106 «Информационные системы»"]},
+      {level:"Магистратура", format:"2+0", scheme:"2 года, формат 2+0",
+       programs:["7M06111 «Computational Data Science and Machine Learning»"]}],
+    finance:["Обучение платное."],
+    about:"Провинциальный государственный университет в Циндао, один из девяти ключевых провинциальных вузов Шаньдуна. Вырос из колледжа химической промышленности и стал многопрофильным университетом. Химия, материаловедение и инженерные науки входят в топ-1% мировых рейтингов ESI. 15 раз получал национальные премии Китая за научно-технический прогресс и изобретения, а также премии DuPont за инновации. Более 31 000 студентов бакалавриата и более 7 200 магистрантов и аспирантов. Сильные направления — материаловедение, химическая инженерия и энергетика.",
+    extra:[["Преимущество формата","Казахстанский диплом для студентов КНР без расходов на переезд, визу и проживание за рубежом. Подходит тем, кто хочет международную квалификацию, но не может уехать на длительный срок."]],
+    todo:["Формулировка «4 года в Satbayev University» при обучении в КНР"] }
+];
+const TYPES = {ddp:"Двойной диплом", sop:"Совместная программа", phd:"Докторантура (PhD)"};
+// Логотипы: оригиналы — в /logo, веб-версии (обрезка полей, сжатие) — в /logo/web/<id>
+const LOGO_SVG = new Set(["cityu","exeter","kimyo"]);
+const logoSrc = p => `logo/web/${p.id}.${LOGO_SVG.has(p.id) ? 'svg' : 'webp'}`;
+const logoImg = (p, extra='') => `<img src="${logoSrc(p)}" alt="Логотип ${esc(p.name)}" decoding="async" ${extra}>`;
+const uniq = a => [...new Set(a.filter(Boolean))];
+const levelsOf  = p => uniq(p.tracks.map(t => t.level));
+const formatsOf = p => uniq(p.tracks.map(t => t.format));
+const programsOf = p => p.type==='phd' ? [] : p.tracks.flatMap(t => t.programs || []);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const pending = '<span class="pending">уточняется</span>';
+const plane = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>';
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const typeBadge = p => `<span class="tbadge ${p.type}">${TYPES[p.type]}</span>${p.incoming ? '<span class="tbadge in">Входящая</span>' : ''}`;
+const routeHTML = p => p.incoming ? `<b>${p.iata}</b><span class="line">${plane}</span><b>ALA</b>` : `<b>ALA</b><span class="line">${plane}</span><b>${p.iata}</b>`;
+
+/* ---------- цифры на главном экране и в каталоге ---------- */
+const COUNTRIES = uniq(PARTNERS.map(p => p.country));
+document.querySelectorAll('[data-count="unis"]').forEach(e => e.textContent = PARTNERS.length);
+document.querySelectorAll('[data-count="countries"]').forEach(e => e.textContent = COUNTRIES.length);
+
+/* ---------- partner cards ---------- */
+const grid = document.getElementById('pgrid');
+grid.innerHTML = PARTNERS.map(p => {
+  const progs = programsOf(p), lv = levelsOf(p), fm = formatsOf(p);
+  const search = normQ([p.name, p.short, p.country, p.city, p.place, ...progs].join(' '));
+  return `
+  <article class="pass" data-country="${p.country}" data-search="${esc(search)}" style="--c1:${p.c1};--c2:${p.c2};--angle:${p.angle}" tabindex="0" role="button" aria-label="${esc(p.name)} — подробнее" data-id="${p.id}">
+    <div class="pass-photo">
+      <span class="logo-badge">${logoImg(p, 'loading="lazy"')}</span>
+      <span class="iata">${p.iata}</span>
+      <span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>Фото кампуса</span>
+    </div>
+    <div class="pass-body">
+      <div class="route">${routeHTML(p)}</div>
+      <div class="tbadges">${typeBadge(p)}</div>
+      <h3>${p.name}</h3>
+      <div class="loc">${p.place}</div>
+      <div class="perf" aria-hidden="true"></div>
+      <div class="fields">
+        <div class="field"><small>Уровень</small><span>${lv.map(l => l.replace(' (PhD)','')).join(' · ')}</span></div>
+        <div class="field"><small>Формат</small><span>${fm.length ? fm.join(' · ') : pending}</span></div>
+        <div class="field"><small>Направления</small><span>${progs.length ? progs.length + ' ' + plural(progs.length,'программа','программы','программ') : (p.type==='phd' ? 'по согласованию' : pending)}</span></div>
+        <div class="field"><small>Язык</small><span>${p.lang || pending}</span></div>
+      </div>
+      <div class="pass-foot"><span class="more">Подробнее ${arrow}</span><span class="barcode" aria-hidden="true"></span></div>
+    </div>
+  </article>`;
+}).join('');
+function plural(n, one, few, many){ const m10=n%10, m100=n%100; return m10===1&&m100!==11 ? one : (m10>=2&&m10<=4&&(m100<10||m100>=20) ? few : many); }
+
+/* ---------- filters + search ---------- */
+const filters = document.getElementById('filters');
+const countByCountry = c => PARTNERS.filter(p => p.country===c).length;
+filters.innerHTML = [`<button class="chip" aria-pressed="true" data-c="*">Все страны<sup>${PARTNERS.length}</sup></button>`]
+  .concat([...COUNTRIES].sort((a,b) => countByCountry(b)-countByCountry(a) || a.localeCompare(b,'ru'))
+  .map(c => `<button class="chip" aria-pressed="false" data-c="${c}">${c}<sup>${countByCountry(c)}</sup></button>`)).join('');
+// одинаковые по виду буквы кириллицы и латиницы приводим к одной форме — коды программ ищутся в любой раскладке
+function normQ(str){
+  const L = {'в':'b','м':'m','е':'e','а':'a','с':'c','о':'o','р':'p','т':'t','х':'x','к':'k','н':'h','у':'y','ё':'e'};
+  return str.toLowerCase().replace(/[вмеасорткхнуё]/g, ch => L[ch]);
+}
+const searchInput = document.getElementById('psearch'), emptyMsg = document.getElementById('pempty');
+let curCountry = '*';
+function render(){
+  const q = normQ(searchInput.value.trim());
+  let shown = 0;
+  grid.querySelectorAll('.pass').forEach((card,i) => {
+    const show = (curCountry==='*' || card.dataset.country===curCountry) && (!q || card.dataset.search.includes(q));
+    const wasHidden = card.classList.contains('hide');
+    card.classList.toggle('hide', !show);
+    if(show){ shown++; if(wasHidden){ card.style.animation='none'; card.offsetHeight; card.style.animation=`rise .6s ${Math.min(i,8)*0.04}s var(--ease) both`; } }
+  });
+  emptyMsg.hidden = shown>0;
+}
+function applyFilter(c){
+  curCountry = c;
+  filters.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x.dataset.c===c));
+  render();
+}
+filters.addEventListener('click', e => { const b = e.target.closest('.chip'); if(b) applyFilter(b.dataset.c); });
+searchInput.addEventListener('input', render);
+
+/* ---------- modal ---------- */
+const dlg = document.getElementById('dlg');
+const $ = id => document.getElementById(id);
+const ico = {
+  info:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>',
+  warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4M12 17h.01"/></svg>',
+  cal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>'
+};
+const yrs = n => (n===1 ? '1 год' : (n%1 ? String(n).replace('.',',')+' года' : n+' '+plural(n,'год','года','лет')));
+
+// шкала «где учится студент»: отрезки пропорциональны годам
+function splitBar(p, t){
+  if(!t.seg) return '';
+  const cells = t.seg.map(([who,n,label],i) => `<div class="yr ${who==='su'?'su':'pt'}" style="flex-grow:${n};animation-delay:${i*.08}s"><span>${label || yrs(n)}</span><b>${who==='su' ? 'Satbayev' : p.short}</b></div>`).join('');
+  return `<div class="split">${cells}</div>
+    <div class="split-legend"><span><i class="sw su"></i>Satbayev University · Алматы</span><span><i class="sw pt"></i>${p.short} · ${p.city}</span></div>`;
+}
+function paneProg(p){
+  const todo = (p.todo||[]).length ? `<div class="callout warn">${ico.warn}<span><b>Уточняется:</b> ${p.todo.join('; ')}.</span></div>` : '';
+  return `
+    <p class="text lead-text">${p.summary}</p>
+    ${todo}
+    ${p.tracks.map(t => `
+      <div class="track-block">
+        <div class="track-head"><h4>${t.level}</h4>${t.format ? `<span class="fmt">${t.format}</span>` : ''}</div>
+        ${t.scheme ? `<p class="scheme">${t.scheme}</p>` : ''}
+        ${splitBar(p,t)}
+        ${t.programs && t.programs.length ? `<ul class="progs ${p.type==='phd'?'plain':''}">${t.programs.map(x => {
+            const m = x.match(/^(\d[0-9A-Za-zА-Яа-я]{5,8})\s+(.*)$/); // код программы, напр. 6B06102
+            return `<li>${m ? `<code>${m[1]}</code><span>${m[2]}</span>` : `<span>${x}</span>`}</li>`; }).join('')}</ul>` : ''}
+        ${t.req ? `<div class="req"><small>Требования</small><p>${t.req}</p></div>` : ''}
+        ${t.note ? `<p class="note-text">${t.note}</p>` : ''}
+      </div>`).join('')}`;
+}
+function paneAdm(p){
+  const parts = [];
+  if(p.selection) parts.push(`<h4>Отбор и поступление</h4><p class="text">${p.selection}</p>`);
+  if(p.deadlines) parts.push(`<h4>Сроки${p.deadlineNote ? ` <span class="h4-note">${p.deadlineNote}</span>` : ''}</h4>
+      <ul class="dl-list">${p.deadlines.map(d => `<li>${ico.cal}<span>${d}</span></li>`).join('')}</ul>`);
+  if(p.docs) parts.push(`<h4>Документы для заявки</h4><div class="tags">${p.docs.map(d => `<span>${d}</span>`).join('')}</div>`);
+  if(p.finance) parts.push(`<h4>Финансовые условия</h4><ul class="fin-list">${p.finance.map(f => `<li>${f}</li>`).join('')}</ul>`);
+  return parts.join('');
+}
+function paneUni(p){
+  const parts = [`<h4>Об университете</h4><p class="text">${p.about}</p>`];
+  (p.extra||[]).forEach(([h,t]) => parts.push(`<h4>${h}</h4><p class="text">${t}</p>`));
+  const life = [['Проживание',p.housing],['Университетская среда',p.campus],['После выпуска',p.after]].filter(x => x[1]);
+  if(life.length) parts.push(`<div class="life">${life.map(([h,t]) => `<div class="life-card"><small>${h}</small><p>${t}</p></div>`).join('')}</div>`);
+  return parts.join('');
+}
+const PANES = [["prog","Программа",paneProg],["adm","Поступление и финансы",paneAdm],["uni","Об университете",paneUni]];
+
+function openPartner(id){
+  const p = PARTNERS.find(x => x.id===id);
+  const head = $('dlgHead');
+  head.style.setProperty('--c1', p.c1); head.style.setProperty('--c2', p.c2); head.dataset.iata = p.iata;
+  dlg.style.setProperty('--c1', p.c1);
+  $('dlgLogo').innerHTML = logoImg(p);
+  $('dlgRoute').innerHTML = routeHTML(p);
+  $('dlgTitle').textContent = p.name;
+  $('dlgLoc').textContent = p.place;
+  $('dlgQuick').innerHTML = [
+    typeBadge(p),
+    ...levelsOf(p).map(l => `<span><b>${l}</b></span>`),
+    formatsOf(p).length && `<span>Формат <b>${formatsOf(p).join(' · ')}</b></span>`,
+    p.lang && `<span>${p.lang}</span>`
+  ].filter(Boolean).join('');
+  $('dlgFootStatus').innerHTML = `${typeBadge(p)}<span>${p.place}</span>`;
+  const panes = PANES.map(([k,label,fn]) => [k,label,fn(p)]).filter(x => x[2].trim());
+  $('dlgTabs').innerHTML = panes.map(([k,label]) => `<button role="tab" data-pane="${k}">${label}</button>`).join('');
+  $('dlgBody').innerHTML = panes.map(([k,,html]) => `<section class="pane" data-pane="${k}" role="tabpanel">${html}</section>`).join('');
+  showPane('prog');
+  dlg.showModal();
+  $('dlgScroll').scrollTop = 0;
+}
+function showPane(k){
+  $('dlgTabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', b.dataset.pane===k));
+  $('dlgBody').querySelectorAll('.pane').forEach(s => s.classList.toggle('active', s.dataset.pane===k));
+  const sc = $('dlgScroll'), tabsTop = $('dlgTabs').offsetTop;
+  if(sc.scrollTop > tabsTop) sc.scrollTop = tabsTop;
+}
+$('dlgTabs').addEventListener('click', e => { const b = e.target.closest('button'); if(b){ showPane(b.dataset.pane); b.scrollIntoView({inline:'nearest',block:'nearest'}); } });
+grid.addEventListener('click', e => { const c = e.target.closest('.pass'); if(c) openPartner(c.dataset.id); });
+grid.addEventListener('keydown', e => { if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('pass')){e.preventDefault();openPartner(e.target.dataset.id);} });
+document.getElementById('dlgClose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if(e.target===dlg || e.target.hasAttribute('data-close')) dlg.close(); });
+
+/* ---------- «Образование без границ»: тип → уровень → реальные маршруты ---------- */
+(function(){
+  const LEVELS = ["Бакалавриат","Магистратура","Докторантура (PhD)"];
+  const DEF = {
+    ddp: { tab:"Двойной диплом", q:"Что такое программа двойного диплома",
+      text:"Программа двойного диплома — это возможность обучаться в Satbayev University и зарубежном университете-партнёре, выполнить требования обоих университетов и получить два диплома о высшем образовании — по одному от каждого университета.",
+      result:[["su","Диплом Satbayev University"],["pt","Диплом университета-партнёра"]], resultNote:"при выполнении требований обоих университетов" },
+    sop: { tab:"Совместная программа", q:"Что такое совместная образовательная программа",
+      text:"Совместная образовательная программа — это программа, реализуемая Satbayev University совместно с зарубежным университетом-партнёром, которая предоставляет студентам возможность обучаться по согласованной образовательной траектории и получать международный академический опыт.",
+      result:[["su","Диплом бакалавра Satbayev University"],["opt","Диплом магистра партнёра — при продолжении обучения"]], resultNote:"второй диплом — в программах с Penn State и SKKU" },
+    phd: { tab:"Докторантура (PhD)", q:"Как устроена совместная докторантура",
+      text:"Совместная докторантура с зарубежным университетом: два научных руководителя, исследовательские периоды не менее 6 месяцев в каждом вузе, одна диссертация и одна защита. Условия закрепляются индивидуальным соглашением.",
+      result:[["su","Диплом доктора PhD Satbayev University"],["pt","Диплом доктора PhD партнёра"]], resultNote:"в формате joint PhD; при joint supervision — один диплом партнёра" }
+  };
+  const ICON_DIP = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="none" opacity=".25"/></svg>';
+
+  // маршруты: группируем треки по типу, уровню, формату и направлению (старт в SU или у партнёра)
+  const routes = [];
+  PARTNERS.forEach(p => p.tracks.forEach(t => {
+    let seg = t.seg, fmt = t.format, note = '';
+    if(!seg && /^\d\+0$/.test(fmt||'')){ seg = [["pt", +fmt[0]]]; note = 'всё обучение — в КНР'; }   // QUST: 4+0, 2+0
+    if(seg){
+      const last = seg[seg.length-1];
+      if(last[2]==='Магистратура') fmt = `${t.format}+${String(last[1]).replace('.',',')}`;
+    }
+    const start = seg ? (seg[0][0]==='su' ? 'su' : 'pt') : 'su';
+    const key = [p.type, t.level, fmt || t.scheme || '—', start, seg ? '' : (t.scheme||'')].join('|');
+    let r = routes.find(x => x.key===key);
+    if(!r){ r = {key, type:p.type, level:t.level, fmt, seg, start, note, text: seg ? '' : (t.scheme || 'Формат уточняется'), unis:[]}; routes.push(r); }
+    else if(seg && r.seg && seg.length < r.seg.length) r.seg = seg;   // для шкалы — самый простой вариант формата
+    if(!r.unis.includes(p)) r.unis.push(p);
+  }));
+  const countBy = (type) => new Set(PARTNERS.filter(p => p.type===type).map(p => p.id)).size;
+
+  const yrs = n => n===1 ? '1 год' : (n%1 ? String(n).replace('.',',')+' года' : n+' '+plural(n,'год','года','лет'));
+  let type = 'ddp', level = 'Бакалавриат';
+
+  $('exTypes').innerHTML = Object.entries(DEF).map(([k,d]) => {
+    const n = countBy(k);
+    return `<button role="tab" data-type="${k}" class="ex-type ${k}">
+      <span class="ex-type-ico">${d.result.map(() => ICON_DIP).join('')}</span>
+      <span class="ex-type-txt"><b>${d.tab}</b><small>${n} ${plural(n,'университет','университета','университетов')}</small></span></button>`;
+  }).join('');
+
+  function renderDef(){
+    const d = DEF[type];
+    $('exDef').innerHTML = `
+      <small class="ex-q">${d.q}</small>
+      <p class="ex-text">${d.text}</p>
+      <div class="ex-eq" aria-label="Схема: Satbayev University плюс университет-партнёр — результат">
+        <span class="node su"><img src="logo-nav-blue.svg" alt="" width="14" height="24">Satbayev</span>
+        <span class="op">+</span>
+        <span class="node pt">Партнёр</span>
+        <span class="op">=</span>
+      </div>
+      <div class="ex-res">${d.result.map(([k,label],i) => `<div class="dip ${k}" style="animation-delay:${.15+i*.12}s"><span class="dip-ico">${ICON_DIP}</span><span>${label}</span></div>`).join('')}</div>
+      <p class="ex-res-note">${d.resultNote}</p>`;
+  }
+  function renderLevels(){
+    const avail = LEVELS.filter(l => routes.some(r => r.type===type && r.level===l));
+    if(!avail.includes(level)) level = avail[0];
+    $('exLevels').innerHTML = avail.map(l => {
+      const n = new Set(routes.filter(r => r.type===type && r.level===l).flatMap(r => r.unis.map(u => u.id))).size;
+      return `<button data-level="${l}" aria-pressed="${l===level}">${l.replace(' (PhD)','')}<sup>${n}</sup></button>`;
+    }).join('');
+  }
+  function bar(r){
+    if(!r.seg) return `<div class="rr-text">${r.text}</div>`;
+    const total = r.seg.reduce((a,s) => a + s[1], 0);
+    return `<div class="rr-bar">${r.seg.map(([who,n,label],i) => {
+      const cls = label==='Магистратура' ? 'pm' : who;
+      const where = label==='Магистратура' ? 'магистратура' : label==='Защита' ? 'защита' : (who==='su' ? 'Алматы' : 'у партнёра');
+      return `<span class="seg ${cls}" style="flex-grow:${n};animation-delay:${i*.1}s"><b>${yrs(n)}</b><small>${where}</small></span>`;
+    }).join('')}</div><span class="rr-total">${r.note || (Number.isInteger(total) ? yrs(total) + ' всего' : '')}</span>`;
+  }
+  function renderList(){
+    const list = routes.filter(r => r.type===type && r.level===level)
+      .sort((a,b) => b.unis.length - a.unis.length);
+    $('exRoutesTitle').textContent = `${level}: ${list.length} ${plural(list.length,'маршрут','маршрута','маршрутов')}`;
+    $('exList').innerHTML = list.map((r,i) => `
+      <div class="rr" style="animation-delay:${i*.06}s">
+        <div class="rr-fmt"><b class="${(r.fmt||'').length>5 ? 'long' : ''}">${r.fmt || '—'}</b>${r.start==='pt' && r.seg && r.seg.length>1 ? '<small class="tag">старт у партнёра</small>' : ''}</div>
+        <div class="rr-main">${bar(r)}</div>
+        <div class="rr-unis">${r.unis.map(u => `<button class="rr-logo" data-id="${u.id}" title="${esc(u.name)}" aria-label="${esc(u.name)} — подробнее">${logoImg(u,'loading="lazy"')}</button>`).join('')}</div>
+      </div>`).join('');
+  }
+  function render(){
+    $('exTypes').querySelectorAll('[data-type]').forEach(b => b.setAttribute('aria-selected', b.dataset.type===type));
+    renderDef(); renderLevels(); renderList();
+  }
+  $('exTypes').addEventListener('click', e => { const b = e.target.closest('[data-type]'); if(b && b.dataset.type!==type){ type = b.dataset.type; render(); } });
+  $('exLevels').addEventListener('click', e => { const b = e.target.closest('[data-level]'); if(b && b.dataset.level!==level){ level = b.dataset.level; renderLevels(); renderList(); } });
+  $('exList').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if(b) openPartner(b.dataset.id); });
+  render();
+})();
+
+/* ---------- «Преимущества»: визуалы карточек считаются из данных партнёров ---------- */
+(function(){
+  const bento = $('bento');
+  // 01 — бегущие строки с городами партнёров
+  const chips = PARTNERS.map(p => `<span style="--c:${p.c2}"><i></i>${p.city}<small>${p.country}</small></span>`);
+  const half = Math.ceil(chips.length/2);
+  const rowA = chips.slice(0, half).join(''), rowB = chips.slice(half).join('');
+  $('mqA').innerHTML = rowA + rowA;   // дубль — для бесшовной прокрутки
+  $('mqB').innerHTML = rowB + rowB;
+
+  // 02 — уникальные программы с кодами
+  const progs = new Map();
+  PARTNERS.forEach(p => programsOf(p).forEach(x => {
+    const m = x.match(/^(\d[0-9A-Za-zА-Яа-я]{5,8})\s+(.*)$/);
+    if(m && !progs.has(m[1])) progs.set(m[1], m[2]);
+  }));
+  const items = [...progs].map(([code,name]) => `<li><code>${code}</code><span>${name}</span></li>`).join('');
+  $('progTicker').innerHTML = items + items;
+
+  // 03 — форматы обучения: шкала + сколько вузов
+  const formats = new Map();
+  PARTNERS.forEach(p => p.tracks.forEach(t => {
+    if(!t.seg || !t.format) return;
+    const last = t.seg[t.seg.length-1];
+    const key = last[2]==='Магистратура' ? `${t.format}+${String(last[1]).replace('.',',')}` : t.format;
+    const seg = t.seg[0][0]==='su' ? t.seg : [...t.seg].reverse();
+    // для шкалы берём самый простой вариант формата (например, Гренобль, а не Хоф с защитой в SU)
+    if(!formats.has(key)) formats.set(key, {seg, unis: new Set()});
+    else if(seg.length < formats.get(key).seg.length) formats.get(key).seg = seg;
+    formats.get(key).unis.add(p.id);
+  }));
+  $('paths').innerHTML = [...formats].sort((a,b) => b[1].unis.size - a[1].unis.size).slice(0,5).map(([k,f],i) => `
+    <li><b>${k}</b><span class="bar">${f.seg.map(([who,n]) => `<i class="${who}" style="flex:${n};transition-delay:${i*.12}s"></i>`).join('')}</span>
+    <small>${f.unis.size} ${plural(f.unis.size,'вуз','вуза','вузов')}</small></li>`).join('');
+
+  // 04 — «облако» университетов и языки обучения
+  $('cloud').innerHTML = PARTNERS.map((p,i) => `<span style="animation-delay:${i*.04}s" title="${esc(p.name)}">${logoImg(p, 'loading="lazy"')}</span>`).join('');
+  const langs = uniq(PARTNERS.flatMap(p => (p.lang||'').split('/').map(s => s.trim())).map(s => s && s[0].toUpperCase()+s.slice(1)));
+  $('langs').innerHTML = `<small>Языки обучения</small>` + langs.map(l => `<span>${l}</span>`).join('');
+
+  // «прожектор» за курсором
+  bento.querySelectorAll('.bn').forEach(card => card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', (e.clientX - r.left)+'px');
+    card.style.setProperty('--my', (e.clientY - r.top)+'px');
+  }));
+
+  // счётчик программ и анимации — при появлении блока
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  new IntersectionObserver((es, o) => es.forEach(e => {
+    if(!e.isIntersecting) return;
+    bento.classList.add('in'); o.disconnect();
+    const target = progs.size, el = $('progCount');
+    if(reduce){ el.textContent = target; return; }
+    const t0 = performance.now(), dur = 1400;
+    (function step(t){ const k = Math.min(1,(t-t0)/dur); el.textContent = Math.round(target*(1-Math.pow(1-k,3))); if(k<1) requestAnimationFrame(step); })(t0);
+    setTimeout(() => { el.textContent = target; }, dur + 300); // страховка, если вкладка была в фоне
+  }), {threshold:.25}).observe(bento);
+})();
+
+/* ---------- «Как поступить»: комикс из 6 кадров (SVG рисуется кодом) ---------- */
+(function(){
+  const K = '#1b1d33', SKIN = '#ffe3cf', HAIR = '#1b2340', HOOD = '#25518e', RED = '#d42630';
+  const ol = (w=4) => `stroke="${K}" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"`;
+
+  /* ===== Персонаж: чиби-студент в фирменном худи. Начало координат — между стоп. ===== */
+  const EYE_X = [-24, 24];
+  function eyes(face){
+    if(face==='happy') return EYE_X.map(x => `<path d="M${x-13},-200 Q${x},-218 ${x+13},-200" fill="none" ${ol(5)}/>`).join('');
+    return `<g class="eyes-open">` + EYE_X.map(x => `
+      <ellipse cx="${x}" cy="-204" rx="12" ry="17" fill="${K}"/>
+      <ellipse cx="${x}" cy="-199" rx="8" ry="11" fill="#2f6bc4"/>
+      <ellipse cx="${x}" cy="-195" rx="6" ry="6" fill="#5b9cf0" opacity=".7"/>
+      <circle cx="${x-4}" cy="-211" r="4.5" fill="#fff"/><circle cx="${x+4}" cy="-195" r="2" fill="#fff"/>
+      <path d="M${x-15},-217 Q${x},-226 ${x+15},-215" fill="none" ${ol(4)}/>`).join('') + `</g>`;
+  }
+  function brows(face){
+    if(face==='determined') return `<path d="M-37,-238 L-12,-229 M12,-229 L37,-238" fill="none" ${ol(4)}/>`;
+    if(face==='nervous')    return `<path d="M-36,-231 L-13,-239 M13,-239 L36,-231" fill="none" ${ol(3.5)}/>`;
+    return `<path d="M-35,-234 Q-24,-240 -13,-235 M13,-235 Q24,-240 35,-234" fill="none" ${ol(3.5)}/>`;
+  }
+  function mouth(face){
+    if(face==='happy' || face==='open') return `<path d="M-12,-173 Q0,-171 12,-173 Q9,-155 0,-155 Q-9,-155 -12,-173Z" fill="#c94b55" ${ol(3)}/><path d="M-6,-160 Q0,-157 6,-160" fill="none" stroke="#ff9aa6" stroke-width="3" stroke-linecap="round"/>`;
+    if(face==='nervous') return `<path d="M-13,-167 q4,-5 8,0 t8,0 t8,0" fill="none" ${ol(3)}/>`;
+    if(face==='o')       return `<ellipse cx="0" cy="-166" rx="6" ry="8" fill="#c94b55" ${ol(3)}/>`;
+    if(face==='determined') return `<path d="M-11,-169 Q0,-160 11,-169 Z" fill="#c94b55" ${ol(3)}/>`;
+    return `<path d="M-9,-170 Q0,-162 9,-170" fill="none" ${ol(3)}/>`;
+  }
+  const ARMS = {
+    down:  {L:['M-50,-132 Q-70,-100 -64,-66',[-64,-60]], R:['M50,-132 Q70,-100 64,-66',[64,-60]]},
+    hold:  {L:['M-50,-132 Q-64,-96 -26,-96',[-22,-96]],  R:['M50,-132 Q64,-96 26,-96',[22,-96]]},
+    point: {L:['M-50,-132 Q-70,-100 -64,-66',[-64,-60]], R:['M50,-132 Q94,-128 122,-152',[126,-155]]},
+    wave:  {L:['M-50,-132 Q-70,-100 -64,-66',[-64,-60]], R:['M50,-132 Q88,-150 94,-200',[94,-208]]},
+    fist:  {L:['M-50,-132 Q-64,-96 -26,-96',[-22,-96]],  R:['M50,-132 Q104,-150 108,-212',[108,-220]]},
+    give:  {L:['M-50,-132 Q-70,-100 -64,-66',[-64,-60]], R:['M50,-132 Q92,-112 122,-114',[126,-114]]}
+  };
+  const arm = ([d]) => `<path d="${d}" fill="none" stroke="${K}" stroke-width="27" stroke-linecap="round"/><path d="${d}" fill="none" stroke="${HOOD}" stroke-width="19" stroke-linecap="round"/>`;
+  const hand = ([,[x,y]], r=11) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${SKIN}" ${ol(3.5)}/>`;
+  const ITEMS = {
+    clipboard: `<g transform="rotate(-4)"><rect x="-42" y="-152" width="84" height="104" rx="9" fill="#c98a4b" ${ol()}/><rect x="-33" y="-141" width="66" height="86" rx="3" fill="#fff" ${ol(2.5)}/>
+      <rect x="-14" y="-159" width="28" height="13" rx="4" fill="#9aa3b5" ${ol(2.5)}/>
+      ${[0,1,2].map(i => `<rect x="-26" y="${-130+i*24}" width="12" height="12" rx="2" fill="#fff" ${ol(2)}/><path d="M-24,${-124+i*24} l4,4 l8,-10" fill="none" stroke="${RED}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M-6,${-124+i*24} h30" stroke="#9aa3b5" stroke-width="4" stroke-linecap="round"/>`).join('')}</g>`,
+    folder: `<g transform="rotate(-6)"><path d="M-46,-130 h30 l8,-9 h50 q6,0 6,6 v66 h-94Z" fill="#f2b33d" ${ol()}/><rect x="-46" y="-122" width="94" height="58" rx="5" fill="#ffc957" ${ol(3)}/><path d="M-30,-104 h40 M-30,-92 h56" stroke="#c98a2b" stroke-width="4" stroke-linecap="round"/></g>`,
+    give: `<g transform="translate(130 -126) rotate(-12)"><rect x="-6" y="-32" width="76" height="56" rx="5" fill="#ffc957" ${ol()}/><path d="M6,-14 h40 M6,-2 h52" stroke="#c98a2b" stroke-width="4" stroke-linecap="round"/></g>`
+  };
+  function hero({x, y, s=1, flip=false, arms='down', face='normal', item='', extra=''}){
+    const A = ARMS[arms];
+    return `<g class="chibi" transform="translate(${x} ${y}) scale(${flip?-s:s} ${s})"><g class="chibi-bob">
+      <ellipse cx="0" cy="2" rx="62" ry="10" fill="${K}" opacity=".18"/>
+      <rect x="-60" y="-142" width="120" height="96" rx="26" fill="${RED}" ${ol()}/>
+      <path d="M-74,-226 Q-84,-300 -10,-307 Q68,-311 80,-238 Q84,-196 68,-166 L56,-198 Q0,-206 -58,-196 L-68,-166 Q-86,-196 -74,-226Z" fill="${HAIR}" ${ol()}/>
+      <path d="M-31,-55 L-28,-12 L-7,-12 L-5,-55Z M5,-55 L7,-12 L28,-12 L31,-55Z" fill="${HAIR}" ${ol()}/>
+      <path d="M-36,-14 h30 q7,0 7,9 v5 h-42 q-2,-14 5,-14Z M6,-14 h30 q7,0 5,14 h-42 v-5 q0,-9 7,-9Z" fill="#fff" ${ol(3.5)}/>
+      <rect x="-12" y="-162" width="24" height="16" fill="${SKIN}" ${ol(3)}/>
+      <path d="M-45,-151 Q-62,-147 -62,-118 L-59,-50 Q0,-40 59,-50 L62,-118 Q62,-147 45,-151 Q0,-136 -45,-151Z" fill="${HOOD}" ${ol()}/>
+      <path d="M-37,-151 Q0,-118 37,-151" fill="none" ${ol(3.5)}/>
+      <path d="M-10,-140 l-2,28 M10,-140 l2,28" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M-30,-84 Q0,-76 30,-84 L26,-62 Q0,-55 -26,-62Z" fill="#1f4682" ${ol(3)}/>
+      <image class="su-print" href="logo-nav-blue.svg" x="20" y="-136" width="21" height="36"/>
+      ${arm(A.L)}${arm(A.R)}
+      ${item ? ITEMS[item] : ''}
+      ${hand(A.L)}${hand(A.R, arms==='fist' ? 14 : 11)}
+      <path d="M-61,-238 Q-63,-178 -31,-152 Q0,-136 31,-152 Q63,-178 61,-238 Q59,-283 0,-285 Q-59,-283 -61,-238Z" fill="${SKIN}" ${ol()}/>
+      <ellipse cx="-39" cy="-180" rx="11" ry="5.5" fill="#ff8fa0" opacity=".55"/><ellipse cx="39" cy="-180" rx="11" ry="5.5" fill="#ff8fa0" opacity=".55"/>
+      ${eyes(face)}${brows(face)}${mouth(face)}
+      <path d="M-67,-236 Q-65,-297 0,-301 Q65,-297 67,-236 L55,-247 L49,-218 L37,-251 L25,-213 L12,-253 L-1,-219 L-14,-255 L-28,-215 L-41,-251 L-51,-221 L-57,-247Z" fill="${HAIR}" ${ol()}/>
+      <path d="M-66,-238 Q-74,-192 -60,-158 L-55,-200Z M66,-238 Q74,-192 60,-158 L55,-200Z" fill="${HAIR}" ${ol(3.5)}/>
+      <path d="M-42,-279 Q-12,-292 22,-286" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".3"/>
+      <path d="M4,-299 Q6,-338 38,-333 Q16,-324 15,-299Z" fill="${HAIR}" ${ol(3)}/>
+      ${face==='nervous' ? `<path d="M64,-262 q10,14 0,22 q-10,-8 0,-22Z" fill="#9adcff" ${ol(2.5)}/>` : ''}
+      ${extra}
+    </g></g>`;
+  }
+
+  /* ===== Общие элементы сцен ===== */
+  const W = 800, H = 560;
+  const bg = c => `<rect width="${W}" height="${H}" fill="${c}"/><rect width="${W}" height="${H}" fill="url(#cmDots)"/>`;
+  const floor = (y, c='#c9d3e3') => `<rect x="0" y="${y}" width="${W}" height="${H-y}" fill="${c}"/><path d="M0,${y} H${W}" ${ol(4)}/>`;
+  function speedlines(cx, cy, n=46, r1=150, r2=700){
+    let d = '';
+    for(let i=0;i<n;i++){ const a = i/n*Math.PI*2 + (i%3)*.02, w = 3 + (i%4)*2.5;
+      const x1 = cx+Math.cos(a)*r1, y1 = cy+Math.sin(a)*r1, x2 = cx+Math.cos(a+w/700)*r2, y2 = cy+Math.sin(a+w/700)*r2, x3 = cx+Math.cos(a-w/700)*r2, y3 = cy+Math.sin(a-w/700)*r2;
+      d += `M${x1.toFixed(1)},${y1.toFixed(1)} L${x2.toFixed(1)},${y2.toFixed(1)} L${x3.toFixed(1)},${y3.toFixed(1)}Z`; }
+    return `<path d="${d}" fill="${K}" opacity=".09"/>`;
+  }
+  const sfx = (x, y, text, rot=-8, size=46, fill=RED) => `<text class="sfx" x="${x}" y="${y}" transform="rotate(${rot} ${x} ${y})" font-size="${size}" fill="${fill}" stroke="${K}" stroke-width="3" paint-order="stroke">${text}</text>`;
+  const label = (x, y, t, size=13, fill=K, anchor='middle', weight=600) => `<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" text-anchor="${anchor}" font-weight="${weight}" class="lbl">${t}</text>`;
+  const sparkle = (x, y, s=1, c='#ffd23f') => `<path transform="translate(${x} ${y}) scale(${s})" d="M0,-18 L5,-5 L18,0 L5,5 L0,18 L-5,5 L-18,0 L-5,-5Z" fill="${c}" ${ol(2.5)}/>`;
+  function person(x, y, s=1, shirt=RED, hair='#5a3a2a', bun=true){  // «взрослый» второстепенный персонаж: голова и плечи
+    return `<g transform="translate(${x} ${y}) scale(${s})">
+      <path d="M-58,40 Q-56,-8 0,-12 Q56,-8 58,40Z" fill="${shirt}" ${ol()}/>
+      <path d="M-14,-12 Q0,2 14,-12" fill="none" ${ol(3)}/>
+      <circle cx="0" cy="-48" r="34" fill="${SKIN}" ${ol()}/>
+      <path d="M-35,-50 Q-36,-86 0,-86 Q36,-86 35,-50 Q20,-70 -35,-50Z" fill="${hair}" ${ol(3.5)}/>
+      ${bun ? `<circle cx="0" cy="-90" r="13" fill="${hair}" ${ol(3)}/>` : ''}
+      <path d="M-16,-50 q5,-5 10,0 M6,-50 q5,-5 10,0" fill="none" ${ol(3)}/>
+      <path d="M-8,-32 Q0,-26 8,-32" fill="none" ${ol(3)}/>
+    </g>`;
+  }
+
+  /* ===== 6 сцен ===== */
+  const SCENES = [
+    { // 01 — выбор программы
+      title:'Выберите программу', text:'Ознакомьтесь с университетами-партнёрами и доступными направлениями обучения.',
+      alt:'Студент указывает на большой экран с картой мира и отмеченными городами университетов-партнёров',
+      svg: () => bg('#dfe7f1') + floor(470) + `
+        <g transform="translate(330 56)">
+          <rect width="430" height="300" rx="18" fill="#fff" ${ol(5)}/>
+          <rect x="16" y="16" width="398" height="268" rx="10" fill="#eaf1fb"/>
+          <path d="M40,90 q30,-40 80,-20 q30,20 10,50 q-40,30 -70,10 q-30,-15 -20,-40Z M70,170 q30,-10 40,20 q10,40 -15,70 q-20,10 -25,-30Z M190,70 q40,-30 90,-10 q60,10 90,40 q10,40 -40,50 q-30,30 -70,10 q-40,-10 -60,-40 q-30,-30 -10,-50Z M300,190 q30,-10 50,10 q10,25 -25,30 q-30,0 -25,-40Z" fill="#c4d4ee" ${ol(2.5)}/>
+          <circle cx="262" cy="104" r="8" fill="${RED}" ${ol(2.5)}/>${label(262,92,'ALA',12)}
+          ${[[110,72,'SCE'],[196,86,'EXT'],[214,98,'HOQ'],[336,128,'HKG'],[352,104,'ICN'],[322,118,'XIY']].map(([px,py,t]) =>
+            `<path d="M262,104 Q${(262+px)/2},${Math.min(py,104)-50} ${px},${py}" fill="none" stroke="${RED}" stroke-width="2.5" stroke-dasharray="6 6"/><circle cx="${px}" cy="${py}" r="6" fill="${HOOD}" ${ol(2)}/>${label(px, py-12, t, 11)}`).join('')}
+          <rect x="16" y="16" width="398" height="34" rx="10" fill="${HOOD}"/>${label(36,39,'Satbayev · партнёры',14,'#fff','start')}
+        </g>
+        <rect x="520" y="356" width="40" height="40" fill="#9aa3b5" ${ol(4)}/><rect x="470" y="392" width="140" height="16" rx="6" fill="#9aa3b5" ${ol(4)}/>
+        ${sfx(56,300,'?',-12,64)}${sfx(96,236,'?',10,44,'#25518e')}
+        ${hero({x:210, y:500, s:1.38, arms:'point', face:'o'})}`,
+      bubbles:[{who:'me', text:'Гонконг? Эксетер? Хоф? Столько вариантов!', x:3, y:5, w:34, tail:'b'}]
+    },
+    { // 02 — требования
+      title:'Проверьте требования', text:'Уточните академические критерии, требования к языку и перечень необходимых документов.',
+      alt:'Студент сосредоточенно изучает чек-лист требований, вокруг карточки GPA, IELTS и уровня английского',
+      svg: () => bg('#f4ead9') + speedlines(400,280) + floor(486,'#e7d6bb') + `
+        ${[[150,120,-8,'GPA ≥ 2.67',HOOD],[640,110,7,'IELTS 6.5',RED],[110,330,6,'English B2','#177245'],[660,320,-6,'ЕНТ · КТ','#8a5d0a']].map(([cx,cy,r,t,c]) =>
+          `<g transform="translate(${cx} ${cy}) rotate(${r})"><rect x="-88" y="-34" width="176" height="68" rx="14" fill="#fff" ${ol(4)}/><rect x="-88" y="-34" width="12" height="68" rx="4" fill="${c}"/>${label(8,9,t,22,K,'middle',700)}</g>`).join('')}
+        <g transform="translate(560 220) rotate(-25)"><circle r="46" fill="#dff1ff" fill-opacity=".6" ${ol(6)}/><circle r="34" fill="none" stroke="#fff" stroke-width="5" opacity=".6"/><rect x="40" y="-9" width="70" height="18" rx="8" fill="#c98a4b" ${ol(4)}/></g>
+        ${sfx(612,450,'ХМ-М…',-6,40,HOOD)}
+        ${hero({x:390, y:510, s:1.45, arms:'hold', face:'determined', item:'clipboard', extra: sparkle(-92,-262,1.1)})}`,
+      bubbles:[{who:'me', text:'Так… средний балл, язык, курс. Проверяю каждое требование!', x:56, y:4, w:36, tail:'bl'}]
+    },
+    { // 03 — документы
+      title:'Подготовьте документы', text:'Соберите документы в соответствии с условиями выбранной программы.',
+      alt:'Вокруг студента летают документы: паспорт, транскрипт, резюме и мотивационное письмо',
+      svg: () => bg('#e2eef0') + floor(452,'#b9cfd6') + `
+        ${[[130,140,-14,'ПАСПОРТ','#7a1631'],[620,120,12,'ТРАНСКРИПТ','#fff'],[150,300,10,'CV','#fff'],[650,290,-10,'ПИСЬМО','#fff'],[560,40,-4,'',''],[250,50,18,'','']].map(([cx,cy,r,t,c]) => t
+          ? `<g class="paper" transform="translate(${cx} ${cy}) rotate(${r})"><rect x="-62" y="-80" width="124" height="160" rx="6" fill="${c}" ${ol(4)}/>${c==='#7a1631' ? `<circle cx="0" cy="-18" r="22" fill="none" stroke="#f2c14e" stroke-width="4"/>${label(0,40,t,14,'#f2c14e')}` : `${[0,1,2,3,4].map(i=>`<path d="M-42,${-34+i*20} h${i%2?60:84}" stroke="#b5bfd0" stroke-width="5" stroke-linecap="round"/>`).join('')}${label(0,-52,t,15)}`}</g>`
+          : `<g transform="translate(${cx} ${cy}) rotate(${r})"><rect x="-40" y="-52" width="80" height="104" rx="5" fill="#fff" ${ol(3)}/><path d="M-26,-26 h52 M-26,-8 h40 M-26,10 h52" stroke="#b5bfd0" stroke-width="4" stroke-linecap="round"/></g>`).join('')}
+        ${sfx(540,250,'ШУРХ!',-10,50)}
+        ${hero({x:400, y:476, s:1.36, arms:'hold', face:'nervous', item:'folder'})}
+        <rect x="70" y="408" width="660" height="30" rx="6" fill="#7b5a3c" ${ol(4)}/><rect x="96" y="436" width="22" height="80" fill="#6a4c32" ${ol(4)}/><rect x="682" y="436" width="22" height="80" fill="#6a4c32" ${ol(4)}/>`,
+      bubbles:[{who:'me', text:'Паспорт, транскрипт, CV, мотивационное письмо… кажется, всё!', x:3, y:66, w:34, tail:'tr'}]
+    },
+    { // 04 — подача заявки
+      title:'Подайте заявку', text:'Передайте документы в ответственное подразделение Satbayev University в установленном порядке.',
+      alt:'Студент с улыбкой передаёт папку с документами сотруднице международного офиса',
+      svg: () => bg('#dde6f3') + floor(480) + `
+        <rect x="430" y="40" width="330" height="70" rx="12" fill="#fff" ${ol(4)}/>
+        <rect x="446" y="56" width="38" height="38" rx="8" fill="${HOOD}"/>${label(465,82,'SU',16,'#fff')}
+        ${label(500,72,'МЕЖДУНАРОДНЫЙ',17,K,'start',800)}${label(500,96,'ОФИС',17,RED,'start',800)}
+        ${person(610, 300, 1.25, RED)}
+        <rect x="440" y="330" width="360" height="160" fill="${HOOD}" ${ol(5)}/><rect x="430" y="316" width="380" height="26" rx="6" fill="#1f4682" ${ol(4)}/>
+        <path d="M470,380 h90 M470,410 h60" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+        ${sfx(420,262,'ВОТ!',-10,50)}
+        ${hero({x:250, y:510, s:1.4, arms:'give', face:'happy', item:'give'})}`,
+      bubbles:[{who:'me', text:'Здравствуйте! Хочу подать заявку на программу двойного диплома.', x:3, y:5, w:34, tail:'b'},
+               {who:'npc', text:'Отлично! Документы приняты — ждите приглашения на отбор.', x:57, y:66, w:38, tail:'tl', delay:1}]
+    },
+    { // 05 — отбор
+      title:'Пройдите отбор', text:'Выполните предусмотренные программой конкурсные и академические требования.',
+      alt:'Онлайн-собеседование: на экране ноутбука комиссия, студент уверенно поднимает кулак',
+      svg: () => bg('#dfe7f1') + speedlines(560,300,60,120,760) + floor(470) + `
+        <rect x="40" y="330" width="380" height="24" rx="6" fill="#7b5a3c" ${ol(4)}/>
+        <g transform="translate(70 120)">
+          <rect width="320" height="210" rx="14" fill="${K}"/>
+          <svg x="12" y="12" width="296" height="186"><rect width="296" height="186" fill="#cfe0f4"/>
+            <path d="M148,0 V186" stroke="#fff" stroke-width="4"/>
+            ${person(74,150,.9,'#3a5a8a','#2a2a3a',false)}${person(222,150,.9,'#5b3a8c','#7a4a2a',true)}</svg>
+          <circle cx="290" cy="30" r="7" fill="${RED}"/>${label(278,35,'REC',11,RED,'end',800)}
+          <path d="M-20,210 h360 l-24,22 h-312Z" fill="#9aa3b5" ${ol(4)}/>
+        </g>
+        ${sparkle(470,120,1.3)}${sparkle(700,90,.9,'#fff')}${sparkle(730,230,1.1)}
+        ${sfx(120,440,'ВПЕРЁД!',-6,46)}
+        ${hero({x:590, y:500, s:1.42, arms:'fist', face:'determined'})}`,
+      bubbles:[{who:'npc', text:'Расскажите, почему вы выбрали эту программу?', x:4, y:3, w:36, tail:'b'},
+               {who:'me', text:'Хочу учиться в международной среде и привезти новые знания домой!', x:62, y:62, w:34, tail:'tl', delay:1}]
+    },
+    { // 06 — подготовка к обучению
+      title:'Подготовьтесь к обучению', text:'После подтверждения участия уточните дальнейшие действия, сроки и организационные вопросы.',
+      alt:'Студент с чемоданом машет рукой в аэропорту, за окном взлетает самолёт, на табло рейсы из Алматы',
+      svg: () => bg('#d8e6f6') + `
+        <svg x="300" y="40" width="470" height="300">
+          <rect width="470" height="300" fill="url(#cmSky)"/>
+          <path d="M0,250 q60,-26 120,-4 t120,0 t120,0 t120,0 V300 H0Z" fill="#fff" opacity=".75"/>
+          <path d="M40,80 q20,-20 44,-6 q18,-14 36,4 q14,0 14,12 h-102 q-6,-10 8,-10Z" fill="#fff" opacity=".85"/>
+          <g class="plane-fly"><g transform="translate(260 130) rotate(-14)">
+            <path d="M-90,0 Q-80,-14 60,-12 Q96,-10 100,0 Q96,10 60,12 Q-80,14 -90,0Z" fill="#fff" ${ol(4)}/>
+            <path d="M-10,-10 L20,-56 L40,-56 L30,-10Z M-10,10 L20,56 L40,56 L30,10Z M-80,-6 L-90,-34 L-74,-34 L-58,-8Z" fill="${HOOD}" ${ol(3.5)}/>
+            <path d="M70,-6 h14" stroke="${K}" stroke-width="4" stroke-linecap="round"/></g></g>
+        </svg>
+        <rect x="300" y="40" width="470" height="300" rx="20" fill="none" ${ol(6)}/>
+        <path d="M535,40 V340 M300,190 H770" stroke="${K}" stroke-width="5"/>
+        <g transform="translate(22 36) scale(.74)">
+          <rect width="250" height="170" rx="12" fill="${K}"/>
+          ${label(18,30,'ВЫЛЕТЫ · DEPARTURES',12,'#ffd23f','start',700)}
+          ${[['ALA → HKG','09:40'],['ALA → EXT','11:15'],['ALA → HOQ','13:05'],['ALA → ICN','16:30']].map(([r,t],i) =>
+            `<text x="18" y="${62+i*28}" class="lbl mono" font-size="15" fill="#fff">${r}</text><text x="232" y="${62+i*28}" class="lbl mono" font-size="15" fill="#9fd0ff" text-anchor="end">${t}</text>`).join('')}
+          <text x="18" y="160" class="lbl mono board-blink" font-size="13" fill="#ffd23f" font-weight="700">● BOARDING</text>
+        </g>
+        ${floor(470,'#c9d3e3')}
+        <g transform="translate(470 400)"><rect x="-6" y="-58" width="12" height="40" rx="4" fill="#9aa3b5" ${ol(3)}/><rect x="-46" y="-22" width="92" height="96" rx="14" fill="${RED}" ${ol(4)}/><path d="M-30,-6 v62 M30,-6 v62" stroke="#fff" stroke-width="4" opacity=".4"/><circle cx="-30" cy="78" r="7" fill="${K}"/><circle cx="30" cy="78" r="7" fill="${K}"/><rect x="-18" y="10" width="36" height="22" rx="4" fill="#fff" ${ol(2.5)}/>${label(0,26,'ALA',11)}</g>
+        ${sfx(540,316,'ВЖ-Ж-Ж!',-8,34,'#fff')}
+        ${hero({x:300, y:500, s:1.4, arms:'wave', face:'happy'})}`,
+      bubbles:[{who:'me', text:'До встречи, Алматы! Впереди — новый университет и два диплома.', x:4, y:52, w:30, tail:'r'}]
+    }
+  ];
+
+  /* ===== Сборка разметки ===== */
+  const stage = $('comicStage'), nav = $('comicSteps');
+  stage.innerHTML = SCENES.map((sc,i) => `
+    <figure class="cpanel" data-i="${i}" aria-hidden="${i?'true':'false'}">
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${sc.alt}" preserveAspectRatio="xMidYMid slice">${sc.svg()}<rect x="2.5" y="2.5" width="${W-5}" height="${H-5}" rx="10" fill="none" stroke="${K}" stroke-width="5"/></svg>
+      ${sc.bubbles.map(b => `<p class="bubble ${b.who} tail-${b.tail}" style="left:${b.x}%;top:${b.y}%;width:${b.w}%;--d:${b.delay ? .9 : .45}s">${b.text}</p>`).join('')}
+      <span class="cpanel-num">${String(i+1).padStart(2,'0')}</span>
+    </figure>`).join('');
+  nav.innerHTML = SCENES.map((sc,i) => `<button type="button" data-i="${i}" aria-label="Шаг ${i+1}: ${sc.title}"><i>${String(i+1).padStart(2,'0')}</i><span>${sc.title}</span><span class="bar" aria-hidden="true"></span></button>`).join('');
+
+  const panels = [...stage.children], tabs = [...nav.children];
+  let cur = 0, busy = false, queued = null;
+  function show(i, dir){
+    if(i===cur || i<0 || i>=SCENES.length) return;
+    if(busy){ queued = i; return; }   // быстрые клики: догоняем после текущего перехода
+    dir = dir || (i>cur ? 1 : -1);
+    const from = panels[cur], to = panels[i];
+    busy = true;
+    to.classList.remove('leaving'); to.dataset.dir = dir>0 ? 'next' : 'prev';
+    to.classList.add('entering','is-active'); to.setAttribute('aria-hidden','false');
+    from.classList.add('leaving'); from.setAttribute('aria-hidden','true');
+    const done = () => { from.classList.remove('is-active','leaving'); to.classList.remove('entering'); busy = false;
+      if(queued!==null){ const q = queued; queued = null; show(q); } };
+    matchMedia('(prefers-reduced-motion: reduce)').matches ? done() : setTimeout(done, 720);
+    cur = i; sync();
+  }
+  function sync(){
+    const sc = SCENES[cur];
+    $('comicNum').textContent = String(cur+1).padStart(2,'0');
+    $('comicTitle').textContent = sc.title;
+    $('comicText').textContent = sc.text;
+    $('comicCount').textContent = `Шаг ${cur+1} из ${SCENES.length}`;
+    $('comicBar').style.width = ((cur+1)/SCENES.length*100)+'%';
+    tabs.forEach((t,k) => { t.classList.toggle('on', k===cur); t.classList.toggle('done', k<cur); if(k===cur) t.setAttribute('aria-current','step'); else t.removeAttribute('aria-current'); });
+    const side = document.querySelector('.comic-side');
+    side.classList.remove('swap'); side.offsetHeight; side.classList.add('swap');
+  }
+  panels[0].classList.add('is-active');
+  sync();
+
+  // автолистание: таймер — CSS-анимация полоски на активном шаге (пауза сохраняет остаток времени)
+  const comic = $('comic'), DUR = 6000;
+  comic.style.setProperty('--dur', DUR+'ms');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let inView = false, hover = false;
+  const setPaused = () => comic.classList.toggle('paused', !inView || hover);
+  nav.addEventListener('animationend', e => { if(e.animationName==='fill') show((cur+1) % SCENES.length, 1); });
+  nav.addEventListener('click', e => { const b = e.target.closest('[data-i]'); if(b) show(+b.dataset.i); });
+  // пауза при наведении — только для мыши: на тач-экранах «наведение» после тапа не снимается
+  comic.addEventListener('pointerenter', e => { if(e.pointerType==='mouse'){ hover = true; setPaused(); } });
+  comic.addEventListener('pointerleave', e => { if(e.pointerType==='mouse'){ hover = false; setPaused(); } });
+  if(!reduce){
+    comic.classList.add('playing');
+    new IntersectionObserver(es => es.forEach(e => { inView = e.isIntersecting; setPaused(); }), {threshold:.5}).observe(comic);
+  }
+  setPaused();
+})();
+
+/* ---------- FAQ ---------- */
+const FAQ = [
+  ["Что такое международные образовательные программы?","Это программы, реализуемые Satbayev University в сотрудничестве с зарубежными университетами. Формат обучения и условия участия зависят от конкретной программы."],
+  ["Чем отличаются программы двойных дипломов от совместных образовательных программ?","Формат реализации, распределение учебных периодов и условия получения дипломов могут различаться. Подробная информация приводится в описании каждой программы."],
+  ["Кто может подать заявку?","Требования к кандидатам зависят от уровня образования, направления подготовки и условий выбранной программы."],
+  ["Нужно ли подтверждать знание английского языка?","Языковые требования устанавливаются отдельно для каждой программы."],
+  ["Какие документы необходимо подготовить?","Перечень документов публикуется в описании соответствующей программы."],
+  ["Где узнать дедлайн подачи документов?","Актуальные сроки размещаются в каталоге программ и подробных описаниях университетов-партнёров."],
+  ["Предусмотрены ли гранты и стипендии?","Возможности финансирования зависят от условий конкретной программы. Их необходимо уточнять перед подачей заявки."]
+];
+document.getElementById('faqList').innerHTML = FAQ.map(([q,a],i) =>
+  `<details class="qa"${i===0?' open':''}><summary>${q}<span class="pm" aria-hidden="true"></span></summary><div class="answer">${a}</div></details>`).join('');
+
+/* ---------- hero route map ---------- */
+// ISO 3166-1 numeric — ключи для сопоставления с world-atlas
+const ISO = {"Китай":156,"США":840,"Республика Корея":410,"Великобритания":826,"Германия":276,"Франция":250,"Бельгия":56,"Узбекистан":860,"Азербайджан":31};
+const HOME_ISO = 398; // Казахстан
+const WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
+
+(async function(){
+  const svg = d3.select('#routes'), W = 800, H = 430;
+  const wrap = document.getElementById('mapWrap'), tip = document.getElementById('mapTip');
+  // Кадр: от западного побережья США до Кореи
+  const projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]],
+    {type:"MultiPoint", coordinates:[[-125,62],[-125,8],[150,62],[150,8],[20,72]]});
+  const path = d3.geoPath(projection);
+  svg.select('.graticule').append('path').attr('d', path(d3.geoGraticule().step([20,20])()));
+
+  const byIso = new Map(Object.entries(ISO).map(([c,id]) => [id,c]));
+  let world;
+  try { world = await (await fetch(WORLD_URL)).json(); }
+  catch(e){ console.warn('Карта не загрузилась', e); }
+
+  /* ---- страны ---- */
+  if(world){
+    const land = topojson.feature(world, world.objects.countries).features.filter(f => +f.id !== 10); // без Антарктиды
+    // у Франции в world-atlas есть Французская Гвиана (Южная Америка) — оставляем только европейскую часть
+    const fr = land.find(f => +f.id === 250);
+    if(fr && fr.geometry.type === 'MultiPolygon')
+      fr.geometry.coordinates = fr.geometry.coordinates.filter(poly => poly[0].every(([lon]) => lon > -30));
+    svg.select('.countries').selectAll('path').data(land).join('path')
+      .attr('d', path)
+      .attr('class', f => 'land' + (byIso.has(+f.id) ? ' partner' : '') + (+f.id===HOME_ISO ? ' home-land' : ''))
+      .attr('data-country', f => byIso.get(+f.id) || null)
+      .style('animation-delay', (f,i) => (byIso.has(+f.id) ? 0.6 : (i%30)*0.012) + 's')
+      .each(function(f){
+        const c = byIso.get(+f.id); if(!c) return;
+        this.setAttribute('tabindex', 0);
+        this.setAttribute('role', 'button');
+        this.setAttribute('aria-label', `${c}: ${PARTNERS.filter(p=>p.country===c).length} университет(а)`);
+      });
+  }
+
+  /* ---- маршруты и города ---- */
+  const [hx,hy] = projection([76.9,43.2]);
+  const seen = new Set();
+  PARTNERS.forEach((p,i) => {
+    const [x,y] = projection([p.lon,p.lat]);
+    const mx=(x+hx)/2, my=Math.min(y,hy) - Math.abs(x-hx)*0.3 - 12;
+    svg.select('.arcs').append('path')
+      .attr('d', `M${hx},${hy} Q${mx},${my} ${x},${y}`)
+      .attr('class', 'arc' + (i===0 ? ' hot' : ''))
+      .attr('data-iata', p.iata).attr('data-country', p.country)
+      .style('animation-delay', (0.8+i*0.12)+'s');
+    if(seen.has(p.iata)) return; seen.add(p.iata);
+    const g = svg.select('.cities').append('g').attr('class','city').style('animation-delay',(1.4+i*0.12)+'s');
+    g.append('circle').attr('cx',x).attr('cy',y).attr('r',2.8);
+    // подписей на карте нет — страны подписаны кнопками под картой
+  });
+  const home = svg.append('g').attr('class','home');
+  home.append('circle').attr('class','ring').attr('cx',hx).attr('cy',hy).attr('r',5);
+  home.append('circle').attr('cx',hx).attr('cy',hy).attr('r',5).attr('fill','#d42630');
+
+  /* ---- подсветка и подсказка ---- */
+  const legend = document.getElementById('mapLegend');
+  legend.innerHTML = `<button class="home-key" tabindex="-1">Казахстан · Satbayev</button>` +
+    Object.keys(ISO).map(c => `<button data-country="${c}">${c}</button>`).join('');
+  let pinned = null;
+
+  function highlight(c){
+    svg.selectAll('.land.partner').classed('on', function(){ return this.dataset.country===c; });
+    svg.selectAll('.arc').classed('hot', function(){ return c ? this.dataset.country===c : false; });
+    legend.querySelectorAll('button[data-country]').forEach(b => b.classList.toggle('on', b.dataset.country===c));
+  }
+  let shown = null, hideTimer = null;
+  function showTip(c){
+    clearTimeout(hideTimer);
+    tip.classList.toggle('pinned', pinned===c);
+    if(shown===c && !tip.hidden) return;   // та же страна — не перерисовываем, иначе мигает
+    shown = c;
+    const unis = PARTNERS.filter(p => p.country===c);
+    // точка привязки: самый северный город страны (или центр контура)
+    const pts = unis.map(p => projection([p.lon,p.lat]));
+    let [x,y] = pts.reduce((a,b) => b[1]<a[1] ? b : a);
+    // координаты SVG → пиксели внутри .map-wrap (учитывает масштаб и поля при max-height)
+    const pt = svg.node().createSVGPoint(); pt.x = x; pt.y = y;
+    const sp = pt.matrixTransform(svg.node().getScreenCTM()), wr = wrap.getBoundingClientRect();
+    x = sp.x - wr.left; y = sp.y - wr.top; const k = 1;
+    tip.innerHTML = `<small>${unis.length} ${unis.length>1?'университета':'университет'}</small><h4>${c}</h4>
+      <ul>${unis.map(p => `<li>${p.name}<br><span style="color:var(--muted);font-size:12.5px">${p.city}</span></li>`).join('')}</ul>
+      <button type="button" data-go="${c}">Смотреть программы ${arrow.replace('<svg','<svg width="15" height="15"')}</button>
+      <p class="tip-hint">Нажмите на страну, чтобы закрепить</p>`;
+    tip.hidden = false;
+    // не даём подсказке вылезти за края
+    const tw = tip.offsetWidth, half = tw/2, wrapW = wrap.clientWidth;
+    let left = x*k; left = Math.max(half+8, Math.min(wrapW-half-8, left));
+    tip.style.left = left+'px'; tip.style.top = (y*k)+'px';
+    tip.classList.remove("below");
+    if(tip.getBoundingClientRect().top < 70){ tip.classList.add("below"); }
+  }
+  function hideTip(){ clearTimeout(hideTimer); tip.hidden = true; tip.classList.remove('pinned'); shown = null; }
+  function goTo(c){
+    hideTip(); pinned = null; highlight(null);
+    applyFilter(c);
+    document.getElementById('partners').scrollIntoView({behavior:'smooth'});
+  }
+
+  // наведение (десктоп) и клик/тап (закрепляет подсказку)
+  // при наведении подсказка «прозрачна» для мыши (pointer-events:none), а уход с страны
+  // прячет её с небольшой задержкой — так переход между соседними странами не мигает
+  const over = c => { if(!pinned){ highlight(c); showTip(c); } };
+  const out  = () => { if(pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(() => { highlight(null); hideTip(); }, 160); };
+  const pick = c => { if(pinned===c){ goTo(c); return; } pinned = c; highlight(c); showTip(c); };
+
+  svg.select('.countries')
+    .on('mouseover', e => { const c = e.target.dataset.country; if(c) over(c); })
+    .on('mouseout',  e => { if(e.target.dataset.country) out(); })
+    .on('click',     e => { const c = e.target.dataset.country; if(c){ e.stopPropagation(); pick(c); } })
+    .on('keydown',   e => { const c = e.target.dataset.country; if(c && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); pick(c); } if(e.key==='Escape'){ pinned=null; out(); } });
+  legend.addEventListener('mouseover', e => { const c = e.target.closest('[data-country]')?.dataset.country; if(c) over(c); });
+  legend.addEventListener('mouseout',  e => { if(e.target.closest('[data-country]')) out(); });
+  legend.addEventListener('click', e => { const c = e.target.closest('[data-country]')?.dataset.country; if(c){ e.stopPropagation(); pick(c); } });
+  tip.addEventListener('click', e => { e.stopPropagation(); const b = e.target.closest('[data-go]'); if(b) goTo(b.dataset.go); });
+  document.addEventListener('click', () => { if(pinned){ pinned=null; highlight(null); hideTip(); } });
+
+  /* ---- автоподсветка маршрутов + плавающий билет (пока пользователь не взаимодействует) ---- */
+  const arcs = [...svg.selectAll('.arc').nodes()], to = document.getElementById('ticketTo'); let k = 0;
+  setInterval(() => {
+    if(pinned || !tip.hidden) return;
+    k = (k+1) % arcs.length;
+    arcs.forEach((a,i) => a.classList.toggle('hot', i===k));
+    to.textContent = arcs[k].dataset.iata;
+  }, 2600);
+})();
+
+/* ---------- header, burger, reveal ---------- */
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40),{passive:true});
+const burger=document.getElementById('burger'), nav=document.getElementById('nav');
+burger.onclick=()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);header.classList.add('scrolled')};
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');burger.setAttribute('aria-expanded',false)}});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal,.reveal-group,#track').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
